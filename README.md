@@ -1,1 +1,1 @@
-# thecnick.github.com
+# thecnick.com
