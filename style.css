@@ -54,14 +54,217 @@ nav a:hover {
   transition: transform 0.2s ease;
 }
 
-.toggle-btn:hover {
-  transform: rotate(-15deg) scale(1.1);
-  color: #eee;
-}
+    }
+
+    /* Sidebar basics */
+    .sidebar {
+      height: 100vh;
+      width: 260px;
+      background: #2e2e2e;
+      padding-top: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar.hidden {
+      transform: translateX(-100%);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      font-family: 'UnifrakturCook', cursive;
+      margin-bottom: 1rem;
+      color: #f4f1ea;
+      position: relative;
+    }
+
+    /* Lantern */
+    .lantern {
+      width: 30px;
+      height: 60px;
+      margin: 0 auto 20px auto;
+      position: relative;
+      transform-origin: top center;
+    }
+    .lantern-body {
+      width: 30px;
+      height: 40px;
+      background: radial-gradient(circle at center, #ffefc0 0%, #e0a500 70%, #5a3d00 100%);
+      border: 2px solid #222;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 0 15px #ffefc0, 0 0 30px #e0a500;
+    }
+    .lantern-handle {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #222;
+      border-radius: 50%;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: transparent;
+    }
+    .swing {
+      animation: swing 2s ease-in-out;
+    }
+    @keyframes swing {
+      0% { transform: rotate(8deg); }
+      100% { transform: rotate(-8deg); }
+    }
+
+    .sidebar a, .dropdown-btn {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: #f4f1ea;
+      display: block;
+      border: none;
+      background: none;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+    .sidebar a:hover, .dropdown-btn:hover {
+      background: #3a4a3f;
+      text-shadow: 0 0 6px #9fe8a3;
+    }
+    .dropdown-container {
+      display: none;
+      background: #444;
+      padding-left: 20px;
+    }
+    .dropdown-container a {
+      font-size: 0.9rem;
+    }
+
+    /* Main content */
+    .main {
+      margin-left: 260px;
+      padding: 20px;
+      flex: 1;
+      transition: margin-left 0.3s;
+    }
+    .main.full {
+      margin-left: 0;
+    }
+
+    /* Toggle button (hamburger) */
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background: #2e2e2e;
+      border: 2px solid #9fe8a3;
+      border-radius: 5px;
+      color: #f4f1ea;
+      font-size: 1.5rem;
+      padding: 5px 10px;
+      cursor: pointer;
+      z-index: 1000;
+      display: none;
+    }
+
+    /* Show toggle button on small screens */
+    @media (max-width: 768px) {
+      .toggle-btn {
+        display: block;
+      }
+      .sidebar {
+        transform: translateX(-100%);
+      }
+      .sidebar.show {
+        transform: translateX(0);
+      }
+      .main {
+        margin-left: 0;
+      }
+    }
 
 
-  }
-}
+  <!-- Toggle Button -->
+  <button id="toggle" class="toggle-btn">☰</button>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <h2>Cabinet</h2>
+
+    <!-- Lantern -->
+    <div id="lantern" class="lantern">
+      <div class="lantern-handle"></div>
+      <div class="lantern-body"></div>
+    </div>
+
+    <a href="index.html">Threshold</a>
+    <button class="dropdown-btn">Ledger ▾</button>
+    <div class="dropdown-container">
+      <a href="about.html">About the Artist</a>
+      <a href="#">Fragment of a Letter</a>
+    </div>
+
+    <button class="dropdown-btn">Codex ▾</button>
+    <div class="dropdown-container">
+      <a href="sketches.html">Sketches</a>
+      <a href="#">Studies</a>
+    </div>
+
+    <button class="dropdown-btn">Vault ▾</button>
+    <div class="dropdown-container">
+      <a href="paintings.html">Paintings</a>
+      <a href="#">Series I</a>
+    </div>
+
+    <button class="dropdown-btn">Lab ▾</button>
+    <div class="dropdown-container">
+      <a href="prints.html">Prints</a>
+      <a href="#">Experiments</a>
+    </div>
+
+    <button class="dropdown-btn">Cabinet ▾</button>
+    <div class="dropdown-container">
+      <a href="curiosities.html">Curiosities</a>
+      <a href="#">Oddities</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div id="main" class="main">
+    <h1>Welcome to the Gothic Cabinet</h1>
+    <p>Choose a drawer to open... if you dare.</p>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    const dropdowns = document.querySelectorAll(".dropdown-btn");
+    const lantern = document.getElementById("lantern");
+    const toggleBtn = document.getElementById("toggle");
+    const sidebar = document.getElementById("sidebar");
+
+    dropdowns.forEach(btn => {
+      btn.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display =
+          dropdownContent.style.display === "block" ? "none" : "block";
+
+        // Swing lantern when a drawer opens
+        lantern.classList.add("swing");
+        setTimeout(() => lantern.classList.remove("swing"), 2000);
+      });
+    });
+
+    // Toggle sidebar on mobile
+    toggleBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("show");
+    });
+  </script>
+
 
 
 
