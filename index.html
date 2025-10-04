@@ -7,6 +7,196 @@
 </head>
 <body style="padding-left: 0px; padding-right: 0px; padding-top: 5px">
   <header>The Gothic Cabinet of Curiosities</header>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gothic Cabinet Sidebar with Lantern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      background: #121212;
+      color: #f4f1ea;
+      display: flex;
+    }
+
+    /* Sidebar basics */
+    .sidebar {
+      height: 100vh;
+      width: 260px;
+      background: #2e2e2e;
+      padding-top: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      transition: width 0.3s;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      font-family: 'UnifrakturCook', cursive;
+      margin-bottom: 1rem;
+      color: #f4f1ea;
+      position: relative;
+    }
+
+    /* Lantern container */
+    .lantern {
+      width: 30px;
+      height: 60px;
+      margin: 0 auto 20px auto;
+      position: relative;
+      transform-origin: top center;
+    }
+
+    /* Lantern body (simple placeholder shape) */
+    .lantern-body {
+      width: 30px;
+      height: 40px;
+      background: radial-gradient(circle at center, #ffefc0 0%, #e0a500 70%, #5a3d00 100%);
+      border: 2px solid #222;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 0 15px #ffefc0, 0 0 30px #e0a500;
+    }
+
+    /* Lantern handle */
+    .lantern-handle {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #222;
+      border-radius: 50%;
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: transparent;
+    }
+
+    /* Swinging animation */
+    .swing {
+      animation: swing 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes swing {
+      0% { transform: rotate(8deg); }
+      100% { transform: rotate(-8deg); }
+    }
+
+    .sidebar a, .dropdown-btn {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: #f4f1ea;
+      display: block;
+      border: none;
+      background: none;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .sidebar a:hover, .dropdown-btn:hover {
+      background: #3a4a3f;
+      text-shadow: 0 0 6px #9fe8a3;
+    }
+
+    /* Dropdown content hidden by default */
+    .dropdown-container {
+      display: none;
+      background: #444;
+      padding-left: 20px;
+    }
+
+    .dropdown-container a {
+      font-size: 0.9rem;
+    }
+
+    /* Main content shifts right */
+    .main {
+      margin-left: 260px;
+      padding: 20px;
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Cabinet</h2>
+
+    <!-- Lantern -->
+    <div id="lantern" class="lantern">
+      <div class="lantern-handle"></div>
+      <div class="lantern-body"></div>
+    </div>
+
+    <a href="index.html">Threshold</a>
+
+    <button class="dropdown-btn">Ledger ▾</button>
+    <div class="dropdown-container">
+      <a href="about.html">About the Artist</a>
+      <a href="#">Fragment of a Letter</a>
+    </div>
+
+    <button class="dropdown-btn">Codex ▾</button>
+    <div class="dropdown-container">
+      <a href="sketches.html">Sketches</a>
+      <a href="#">Studies</a>
+    </div>
+
+    <button class="dropdown-btn">Vault ▾</button>
+    <div class="dropdown-container">
+      <a href="paintings.html">Paintings</a>
+      <a href="#">Series I</a>
+    </div>
+
+    <button class="dropdown-btn">Lab ▾</button>
+    <div class="dropdown-container">
+      <a href="prints.html">Prints</a>
+      <a href="#">Experiments</a>
+    </div>
+
+    <button class="dropdown-btn">Cabinet ▾</button>
+    <div class="dropdown-container">
+      <a href="curiosities.html">Curiosities</a>
+      <a href="#">Oddities</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <h1>Welcome to the Gothic Cabinet</h1>
+    <p>Choose a drawer to open... if you dare.</p>
+  </div>
+
+  <!-- Dropdown toggle script -->
+  <script>
+    const dropdowns = document.querySelectorAll(".dropdown-btn");
+    const lantern = document.getElementById("lantern");
+
+    dropdowns.forEach(btn => {
+      btn.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display =
+          dropdownContent.style.display === "block" ? "none" : "block";
+
+        // Swing lantern each time dropdown is toggled
+        lantern.classList.add("swing");
+        setTimeout(() => lantern.classList.remove("swing"), 2000);
+      });
+    });
+  </script>
+</body>
+</html>
+
   <nav>
     <a href="index.html">Threshold</a>
     <a href="about.html">Ledger</a>
