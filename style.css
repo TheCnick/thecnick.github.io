@@ -41,6 +41,30 @@ nav a {
 nav a:hover {
   text-shadow: 0 0 5px var(--sage);
 }
+.toggle-btn {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1100;
+  color: #ccc; /* pale bone color */
+  transition: transform 0.2s ease;
+}
+
+.toggle-btn:hover {
+  transform: rotate(-15deg) scale(1.1);
+  color: #eee;
+}
+
+
+  }
+}
+
+
+
 
 /* Section-specific vibes */
 .codex { background: #fefdf8 url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #222; }
