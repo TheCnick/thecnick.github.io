@@ -20,7 +20,7 @@
     <h2>Sketchbook Pages</h2>
     <p>Here lie unfinished ideas, stray lines, and half-remembered forms...</p>
   </main>
-	<div>
+	<<div class="content">
 			text-block: "<div style='width: 300px; height: 200px; background:pink;'>I am a text block</div>",
 			metadata: {
 				type: "text",
@@ -30,27 +30,10 @@
 				description: 'sample-description',
 				backgroundColor: 'pink'
 		}
-		        image: url-"https://upload.wikimedia.org/wikipedia/commons/6/61/Attributes_of_Music.jpg"
-		        height: 200px
-				width: 300px
-			},
-
-		},
-	]
-
-	// The options of the gallery (from the playground current state)
-	const options = {
-		galleryLayout: -1,
-	};
-
-	// The size of the gallery container. The images will fit themselves in it
-	const container = {
-		width: window.innerWidth,
-		height: window.innerHeight
-	};
-
-
-	return (
+		       <div style='width: 1500px; height: 2000px; image-url="https://upload.wikimedia.org/wikipedia/commons/6/61/Attributes_of_Music.jpg";
+		        '>Violin</div>"
+	
+			}
 		<ProGallery
 			items={items}
 			options={options}
