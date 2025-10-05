@@ -20,7 +20,8 @@
     <h2>Sketchbook Pages</h2>
     <p>Here lie unfinished ideas, stray lines, and half-remembered forms...</p>
   </main>
-  import { ProGallery } from 'pro-gallery';
+	<div>
+import { ProGallery } from 'pro-gallery';
 import 'pro-gallery/dist/statics/main.css';
 export default function Gallery() {
 	// Add your images here...
@@ -83,11 +84,6 @@ export default function Gallery() {
 		height: window.innerHeight
 	};
 
-	// The eventsListener will notify you anytime something has happened in the gallery.
-	const eventsListener = (eventName, eventData) => console.log({eventName, eventData}); 
-
-	// The scrollingElement is usually the window, if you are scrolling inside another element, suplly it here
-	const scrollingElement = window;
 
 	return (
 		<ProGallery
@@ -99,5 +95,6 @@ export default function Gallery() {
 		/>
 	);
 }
+		</ProGallery> </div>
 </body>
 </html>
