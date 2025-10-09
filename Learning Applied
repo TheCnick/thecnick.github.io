@@ -1,0 +1,15 @@
+<! DOCTYPE html>
+<html>
+<head style="background-color:sage;"> Art of C.nick </head>
+<div>
+<body style="background-color:dark gray;">
+<h1>Welcome</h1>
+<p style="position:center; color:dark gray;">This will be an introductory paragraph</p>
+<img src ="C:\Users\TheRa\Pictures\1a3fd7a3-5a2e-48ff-a5d1-0da84bb874cf.png">
+<br>
+<p>A second paragraph about whatever.</p>
+<hr>
+<p>A send off.</p>
+</body>
+</div>
+</html>
