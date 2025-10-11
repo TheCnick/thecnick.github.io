@@ -17,7 +17,7 @@ body {
     transform: translateY(-100%);
     
     /* Animation: Smooth transition for the transform property */
-    transition: transform 6s ease-in-out;
+    transition: transform 6.0s ease-in-out;
 }
 
 /* Final State: The class that JavaScript will add */
