@@ -2,25 +2,22 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    overflow-x: hidden; /* Prevents horizontal scrollbars */
+    overflow-x: hidden;
 }
 
 .drawer {
-    position: fixed; /* Or 'absolute' depending on your layout */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #2c3e50;
     z-index: 1000;
-    
-    /* Initial State: Hidden above the viewport */
     transform: translateY(-100%);
-    
-    /* Animation: Smooth transition for the transform property */
     transition: transform 0.6s ease-in-out;
+    /* Make this a positioning context */
+    position: relative; 
 }
 
-/* Final State: The class that JavaScript will add */
 .drawer.is-open {
     transform: translateY(0);
 }
@@ -37,11 +34,10 @@ body {
     text-decoration: none;
     text-align: center;
     margin: 0 20px;
-    opacity: 0; /* Initially hide the icons */
-    transition: opacity 0.5s ease-in-out 0.4s; /* Add a delay */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.4s;
 }
 
-/* When the drawer is open, fade in the icons */
 .drawer.is-open .icon-link {
     opacity: 1;
 }
@@ -50,20 +46,18 @@ body {
     font-size: 2em;
     display: block;
     margin-bottom: 8px;
-}```
+}
 
-#### Step 3: The JavaScript to Trigger the Animation
-
-This small piece of JavaScript will add the `.is-open` class to your drawer once the page is loaded, which will trigger the CSS transition.
-
-```javascript
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-    const drawer = document.getElementById('drawer-nav');
-
-    // Use a small timeout to ensure the browser has rendered the initial state
-    // before trying to animate. This prevents the animation from being skipped.
-    setTimeout(() => {
-        drawer.classList.add('is-open');
-    }, 200); // A 200ms delay is usually sufficient
-});
+/* New styles for the handle */
+.drawer-handle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4));
+    /* Prevents the user from dragging the image */
+    -webkit-user-drag: none;
+    user-select: none;
+}
