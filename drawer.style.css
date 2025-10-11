@@ -1,0 +1,69 @@
+/* styles.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow-x: hidden; /* Prevents horizontal scrollbars */
+}
+
+.drawer {
+    position: fixed; /* Or 'absolute' depending on your layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    z-index: 1000;
+    
+    /* Initial State: Hidden above the viewport */
+    transform: translateY(-100%);
+    
+    /* Animation: Smooth transition for the transform property */
+    transition: transform 0.6s ease-in-out;
+}
+
+/* Final State: The class that JavaScript will add */
+.drawer.is-open {
+    transform: translateY(0);
+}
+
+.drawer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon-link {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 20px;
+    opacity: 0; /* Initially hide the icons */
+    transition: opacity 0.5s ease-in-out 0.4s; /* Add a delay */
+}
+
+/* When the drawer is open, fade in the icons */
+.drawer.is-open .icon-link {
+    opacity: 1;
+}
+
+.icon-link i {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 8px;
+}```
+
+#### Step 3: The JavaScript to Trigger the Animation
+
+This small piece of JavaScript will add the `.is-open` class to your drawer once the page is loaded, which will trigger the CSS transition.
+
+```javascript
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const drawer = document.getElementById('drawer-nav');
+
+    // Use a small timeout to ensure the browser has rendered the initial state
+    // before trying to animate. This prevents the animation from being skipped.
+    setTimeout(() => {
+        drawer.classList.add('is-open');
+    }, 200); // A 200ms delay is usually sufficient
+});
