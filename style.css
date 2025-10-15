@@ -71,7 +71,7 @@ nav a:hover {
 
 .sidebar a:hover {
   text-shadow: 0 0 5px var(--sage);
-  color: sage;
+  color: var(--sage);
 }
   
 
