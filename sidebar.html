@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gothic Cabinet of Curiosities</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Cinzel", serif;
+      background-color: #1d1f1e;
+      color: #eee;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 100%;
+      background: #2b2e2d;
+      padding: 2rem 1rem;
+      box-shadow: 4px 0 12px rgba(0,0,0,0.6);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .sidebar.open {
+      transform: translateX(0);
+    }
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #c4d6c1;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: 1rem 0;
+      text-decoration: none;
+      color: #ddd;
+      transition: color 0.2s ease;
+    }
+
+    .sidebar a:hover {
+      color: #fff;
+    }
+
+    /* Toggle button */
+    .toggle-btn {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      z-index: 1100;
+      color: #ccc;
+      transition: transform 0.2s ease;
+    }
+
+    .toggle-btn:hover {
+      transform: rotate(-15deg) scale(1.1);
+      color: #eee;
+    }
+
+    @media (min-width: 769px) {
+      .toggle-btn { display: none; }
+      .sidebar { transform: translateX(0); }
+    }
+
+    /* Lantern */
+    .lantern {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      width: 40px;
+      height: 80px;
+      background: radial-gradient(circle at center, #f5e6a1 20%, #b89e4f 60%, #000 100%);
+      border-radius: 50% / 30%;
+      box-shadow: 0 0 20px rgba(245, 230, 161, 0.7);
+      transform-origin: top center;
+      transition: transform 1s ease;
+      z-index: 1200;
+    }
+
+    .lantern.swing {
+      animation: swing 2s ease-in-out;
+    }
+
+    @keyframes swing {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      50% { transform: rotate(-8deg); }
+      75% { transform: rotate(6deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Page content */
+    .content {
+      margin-left: 0;
+      padding: 2rem;
+      max-width: 800px;
+    }
+
+    @media (min-width: 769px) {
+      .content { margin-left: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Toggle Button (Crossbones Emoji for now) -->
+  <button class="toggle-btn" onclick="toggleSidebar()">☠️</button>
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <h2>Cabinet</h2>
+    <a href="#">Sketchbook</a>
+    <a href="#">Paintings</a>
+    <a href="#">Designs & Prints</a>
+    <a href="#">Objects</a>
+    <a href="#">About</a>
+  </nav>
+
+  <!-- Lantern -->
+  <div class="lantern"></div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Welcome to the Cabinet</h1>
+    <p>
+      Within these pages lie relics of brush, ink, and bone.  
+      Each click unlocks another drawer of the cabinet, each sketch a whisper of what was.
+    </p>
+  </div>
+
+  <script>
+    const sidebar = document.querySelector('.sidebar');
+    const lantern = document.querySelector('.lantern');
+
+    function toggleSidebar() {
+      sidebar.classList.toggle('open');
+      // Trigger lantern swing
+      lantern.classList.add('swing');
+      setTimeout(() => lantern.classList.remove('swing'), 2000);
+    }
+  </script>
+</body>
+</html>
