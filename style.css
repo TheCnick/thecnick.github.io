@@ -53,14 +53,13 @@ nav a:hover {
   color: #ccc; /* pale bone color */
   transition: transform 0.2s ease;
 }
-.sidebar {
+.sidebar { 
+  background: #7777; 
   width: 100px; 
   height: 300px; 
   margin-left: 30px; 
   padding-left:10px; 
-  background: #7777'; 
-  color: #ffffff; 
-  text-decoration: none; 
+  color: #ccc; 
 }
 
 
