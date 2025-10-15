@@ -62,7 +62,7 @@ nav a:hover {
 
 /* Section-specific vibes */
 .index {  
-    background: #000000 url('/1000003518.jpg') no-repeat center center fixed; 
+    background: #000000 url('https://picsum.photos/1920/1080') no-repeat center center fixed; 
     background-size: cover; 
     color: #222;
 }
