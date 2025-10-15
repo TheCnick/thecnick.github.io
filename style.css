@@ -61,7 +61,7 @@ nav a:hover {
   padding-left:10px;
 }
 
-sidebat < a {
+sidebar > a {
   color: #ccc;
   text-decoration:none; 
 }
