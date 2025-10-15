@@ -13,7 +13,6 @@ body {
   background-color: var(--black);
   color: var(--cream);
   line-height: 1.6;
-  min-height: 100vh;
 }
 
 header {
@@ -54,7 +53,17 @@ nav a:hover {
   color: #ccc; /* pale bone color */
   transition: transform 0.2s ease;
 }
-
+.sidebar {
+  width: 100px; 
+  height: 300px; 
+  margin-left: 
+  30px; 
+  padding-left:10px; 
+  background-color: #7777'; 
+  link-color: #000000; 
+  text-decoration:none; 
+  color:inherit;
+}
 
 
 
