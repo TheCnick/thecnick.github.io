@@ -55,11 +55,12 @@ nav a:hover {
 }
 
 .sidebar { 
-  background: #7777;
+  background: #7777 100%;
   width: 100px;
   height: 300px;
   margin-left: 30px;
   padding-left:10px;
+  padding-top: 30px;
 }
 
 .sidebar a {
