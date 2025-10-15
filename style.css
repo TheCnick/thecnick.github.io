@@ -61,6 +61,7 @@ nav a:hover {
 
 
 /* Section-specific vibes */
+.index { background: url('https://app.coschedule.com/calendar/531535/schedule/open/message/create?c=%5B%5D&calendarItemCreateDate=10142025&cfs=%5B%5D&e=%5B%5D&idg=&isBuffer=false&l=%5B%5D&m=%5B%5D&pt=%5B%5D&s=%5B%5D&showSearchModal=false&st=%5B%5D&t=%5B%5D&tsw=&tvo=&view=3206639&w=%5B%5D')
 .codex { background: #fefdf8 url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #222; }
 .vault { background: #0d0d0d; border: 5px solid #666; padding: 1rem; }
 .lab { background: radial-gradient(circle, #0d0d0d, #1a1a1a); color: #9fe8a3; }
