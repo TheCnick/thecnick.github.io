@@ -59,9 +59,12 @@ nav a:hover {
   height: 300px;
   margin-left: 30px;
   padding-left:10px;
-  font-color: #ccc;
 }
 
+.sidebat > a {
+  color: #ccc;
+  text-decoration:none; 
+}
 
 
 
