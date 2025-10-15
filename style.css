@@ -62,12 +62,12 @@ nav a:hover {
   padding-left:10px;
 }
 
-sidebar a {
+.sidebar a {
   color: #ccc; /* pale bone color */
   text-decoration: none; 
 }
 
-sidebar a:hover {
+.sidebar a:hover {
   text-shadow: 0 0 5px var(--sage);
 }
   
