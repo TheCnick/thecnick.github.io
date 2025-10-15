@@ -53,6 +53,7 @@ nav a:hover {
   color: #ccc; /* pale bone color */
   transition: transform 0.2s ease;
 }
+
 .sidebar { 
   background: #7777;
   width: 100px;
@@ -66,7 +67,10 @@ sidebar a {
   text-decoration: none; 
 }
 
-
+sidebar a:hover {
+  text-shadow: 0 0 5px var(--sage);
+}
+  
 
 /* Section-specific vibes */
 .threshold { background: #000000 url('/1000003518.jpg') no-repeat center center fixed; background-size: cover; }
