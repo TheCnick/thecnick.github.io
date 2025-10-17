@@ -31,16 +31,6 @@ nav {
   background: var(--gray);
   padding: 0.5rem;
 }
-
-nav a {
-  color: var(--cream);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-shadow: 0 0 5px var(--sage);
-}
 .toggle-btn {
   position: fixed;
   top: 1rem;
@@ -67,6 +57,7 @@ nav a:hover {
 .sidebar a {
   color: #ccc; /* pale bone color */
   text-decoration: none; 
+  font-weight: bold;
 }
 
 .sidebar a:hover {
