@@ -74,7 +74,7 @@ header {
 .ovals {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 300px;
   overflow: hidden; /* Still good practice for positioned elements */
   display: flex; /* Using flexbox to arrange them initially */
   justify-content: center; /* Center horizontally */
@@ -84,7 +84,7 @@ header {
 
 .oval-wrapper {
   position: absolute; /* Keep absolute positioning for precise control */
-  width: 40%; /* Adjust width to make them suitable for display */
+  width: 30%; /* Adjust width to make them suitable for display */
   padding-bottom: 50%; /* Create a taller oval aspect ratio for your plaques */
   border-radius: 50%/60%; /* This can make a more distinct oval shape if needed */
   background-color: transparent; /* Assuming your images will fill the space */
@@ -104,15 +104,15 @@ header {
 
 /* Specific positioning for your two plaques */
 .oval-1 {
-  top: 15%; /* Starting position from the top */
-  left: 20%; /* Starting position from the left */
+  top: 10%; /* Starting position from the top */
+  left: 15%; /* Starting position from the left */
   transform: rotate(-3deg); /* A very slight, subtle tilt */
   z-index: 2; /* Ensures it's clearly on top if they overlap */
 }
 
 .oval-2 {
-  top: 30%; /* Lower than oval-1, creating the "down a little" effect */
-  left: 55%; /* More to the right than oval-1 */
+  top: 20%; /* Lower than oval-1, creating the "down a little" effect */
+  left: 45%; /* More to the right than oval-1 */
   transform: rotate(2deg); /* A very slight tilt in the opposite direction */
   z-index: 1; /* Can be behind oval-1 */
 }
