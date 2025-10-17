@@ -1,12 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
     const sidebar = document.getElementById('sidebar');
+    const sidebarOverlay = document.getElementById('sidebar-overlay'); // Get the overlay element
 
-menuToggle.addEventListener('click', function() {
-        sidebar.classList.toggle('active');
-const sidebarOverlay = document.getElementById('sidebar-overlay'); // Get the overlay element
-
-function toggleSidebar() {
+    function toggleSidebar() {
         sidebar.classList.toggle('active');
         sidebarOverlay.classList.toggle('active'); // Toggle active class on overlay
     }
@@ -22,6 +19,5 @@ function toggleSidebar() {
     // const sidebarLinks = sidebar.querySelectorAll('a');
     // sidebarLinks.forEach(link => {
     //     link.addEventListener('click', toggleSidebar);
-    // 
-    });
+    // });
 });
