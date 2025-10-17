@@ -71,19 +71,15 @@ header {
   color: var(--sage);
 }
 
-.oval-1 .oval-2 {
-  position: relative; 
-  width: 100%;   
-  height: 500px; 
-  overflow: hidden; /* Important for rotated elements */
-}
-
-
 .oval-1 {
   top: 10%;
   left: 50%;
   transform: ; /* Diagonal angle */
   z-index: 2; /* Ensures it's on top if overlapping */
+  position: relative; 
+  width: 100%;   
+  height: 500px; 
+  overflow: hidden; /* Important for rotated elements */
 }
 
 .oval-2 {
@@ -91,6 +87,10 @@ header {
   left: 75%; /* Adjust to control horizontal spacing */
   transform:; /* Diagonal angle in opposite direction */
   z-index: 1; /* Can be adjusted if you want it behind the first */
+  position: relative; 
+  width: 100%;   
+  height: 500px; 
+  overflow: hidden; /* Important for rotated elements */
 }
 
 /* Section-specific vibes */
