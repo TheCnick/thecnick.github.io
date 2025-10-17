@@ -81,13 +81,13 @@ header {
 
 .oval-1 {
   top: 10%;
-  left: 10%;
+  left: 30%;
   transform: ; /* Diagonal angle */
   z-index: 2; /* Ensures it's on top if overlapping */
 }
 
 .oval-2 {
-  top: 40%; /* Adjust to control vertical spacing */
+  top: 20%; /* Adjust to control vertical spacing */
   left: 55%; /* Adjust to control horizontal spacing */
   transform:; /* Diagonal angle in opposite direction */
   z-index: 1; /* Can be adjusted if you want it behind the first */
