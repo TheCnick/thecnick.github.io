@@ -71,26 +71,61 @@ header {
   color: var(--sage);
 }
 
+.ovals {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden; /* Still good practice for positioned elements */
+  display: flex; /* Using flexbox to arrange them initially */
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align to the top of the container */
+  gap: 2%; /* Small gap between the items */
+}
+
+.oval-wrapper {
+  position: absolute; /* Keep absolute positioning for precise control */
+  width: 40%; /* Adjust width to make them suitable for display */
+  padding-bottom: 50%; /* Create a taller oval aspect ratio for your plaques */
+  border-radius: 50%/60%; /* This can make a more distinct oval shape if needed */
+  background-color: transparent; /* Assuming your images will fill the space */
+  overflow: hidden; /* Keep image inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+}
+
+.oval-wrapper:hover {
+  transform: scale(1.03) translateY(-5px); /* Slightly larger and "lifted" */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+}
+
+/* Specific positioning for your two plaques */
 .oval-1 {
-  top: 10%;
-  left: 30%;
-  transform: ; /* Diagonal angle */
-  z-index: 2; /* Ensures it's on top if overlapping */
-  position: relative; 
-  width: 100%;   
-  height: 500px; 
-  overflow: hidden; /* Important for rotated elements */
+  top: 15%; /* Starting position from the top */
+  left: 20%; /* Starting position from the left */
+  transform: rotate(-3deg); /* A very slight, subtle tilt */
+  z-index: 2; /* Ensures it's clearly on top if they overlap */
 }
 
 .oval-2 {
-  top: 10%; /* Adjust to control vertical spacing */
-  left: 55%; /* Adjust to control horizontal spacing */
-  transform:; /* Diagonal angle in opposite direction */
-  z-index: 1; /* Can be adjusted if you want it behind the first */
-  position: relative; 
-  width: 100%;   
-  height: 500px; 
-  overflow: hidden; /* Important for rotated elements */
+  top: 30%; /* Lower than oval-1, creating the "down a little" effect */
+  left: 55%; /* More to the right than oval-1 */
+  transform: rotate(2deg); /* A very slight tilt in the opposite direction */
+  z-index: 1; /* Can be behind oval-1 */
+}
+
+.oval-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Use 'contain' to ensure the entire plaque is visible */
+  /* If your images are already pre-cropped to the oval, 'cover' might work.
+     But since these are reliefs, 'contain' will likely preserve the full plaque. */
+  border-radius: 50%/60%; /* Match the border-radius of the wrapper for consistent masking */
+  /* Or, if the plaques have their own irregular shape, you might skip border-radius on img
+     and instead rely on a transparent background for the oval-wrapper. */
 }
 
 /* Section-specific vibes */
