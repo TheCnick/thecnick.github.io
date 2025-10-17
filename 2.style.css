@@ -114,7 +114,7 @@ header {
 }
 
 .oval-2 {
-  top: 5.5%; /* Lower than oval-1, creating the "down a little" effect */
+  top: 6%; /* Lower than oval-1, creating the "down a little" effect */
   left: 60%; /* More to the right than oval-1 */
   transform: rotate(0deg); /* A very slight tilt in the opposite direction */
   z-index: 1; /* Can be behind oval-1 */
