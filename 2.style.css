@@ -147,6 +147,11 @@ header {
      and instead rely on a transparent background for the oval-wrapper. */
 }
 
+.content {
+    flex-grow: 1; /* Allows main content to take remaining vertical space */
+    padding: 20px;
+}
+
 /* Section-specific vibes */
 .landing { background: #000000 url('/1000003518.jpg') no-repeat center center fixed; background-size: cover; }
 .codex { background: #fefdf8 url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #222; }
