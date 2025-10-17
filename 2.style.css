@@ -25,6 +25,7 @@ header {
 }
 
 .landing header {
+    font-family: 'Cinzel', serif;
     background-color: transparent;
     color: #333;
     text-align: left;
