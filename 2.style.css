@@ -27,6 +27,7 @@ header {
 .landing header {
     font-family: 'Cinzel', serif;
     font-size: 40px;
+    padding-top: 15px;
     height: 2%;
     background-color: transparent;
     color: #333;
