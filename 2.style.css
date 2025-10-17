@@ -104,7 +104,6 @@ header {
 
 /* Specific positioning for your two plaques */
 .oval-1 {
-  height: 300px;
   top: 6%; /* Starting position from the top */
   left: 15%; /* Starting position from the left */
   transform: rotate(-3deg); /* A very slight, subtle tilt */
@@ -112,7 +111,6 @@ header {
 }
 
 .oval-2 {
-  height: 300px;
   top: 20%; /* Lower than oval-1, creating the "down a little" effect */
   left: 45%; /* More to the right than oval-1 */
   transform: rotate(2deg); /* A very slight tilt in the opposite direction */
