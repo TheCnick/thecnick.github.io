@@ -24,6 +24,12 @@ header {
   color: var(--cream);
 }
 
+.landing header {
+    background-color: #aaddff; /* Light blue background */
+    color: #333;
+    border-bottom: 5px solid #007bff;
+}
+
 .sidebar { 
   padding: 0.5rem;
   width: 150px;
