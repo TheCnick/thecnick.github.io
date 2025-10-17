@@ -84,8 +84,8 @@ header {
 
 .oval-wrapper {
   position: absolute; /* Keep absolute positioning for precise control */
-  width: 30%; /* Adjust width to make them suitable for display */
-  padding-bottom: 50%; /* Create a taller oval aspect ratio for your plaques */
+  width: 544; /* Adjust width to make them suitable for display */
+  padding-bottom: 10%; /* Create a taller oval aspect ratio for your plaques */
   border-radius: 50%/60%; /* This can make a more distinct oval shape if needed */
   background-color: transparent; /* Assuming your images will fill the space */
   overflow: hidden; /* Keep image inside */
