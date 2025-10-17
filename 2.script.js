@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.getElementById('menu-toggle');
     const sidebar = document.getElementById('sidebar');
 
-    menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function() {
         sidebar.classList.toggle('active');
 const sidebarOverlay = document.getElementById('sidebar-overlay'); // Get the overlay element
 
-    function toggleSidebar() {
+function toggleSidebar() {
         sidebar.classList.toggle('active');
         sidebarOverlay.classList.toggle('active'); // Toggle active class on overlay
     }
