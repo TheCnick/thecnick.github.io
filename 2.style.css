@@ -36,7 +36,6 @@ header {
   display: flex;
   justify-content: center;
   gap: 3rem;  
-  margin-left: 2%;
 }
 
 .sidebar a {
