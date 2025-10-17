@@ -104,16 +104,16 @@ header {
 
 /* Specific positioning for your two plaques */
 .oval-1 {
-  top: 6%; /* Starting position from the top */
-  left: 15%; /* Starting position from the left */
-  transform: rotate(-3deg); /* A very slight, subtle tilt */
+  top: 2%; /* Starting position from the top */
+  left: 17%; /* Starting position from the left */
+  transform: rotate(-0deg); /* A very slight, subtle tilt */
   z-index: 2; /* Ensures it's clearly on top if they overlap */
 }
 
 .oval-2 {
-  top: 20%; /* Lower than oval-1, creating the "down a little" effect */
-  left: 45%; /* More to the right than oval-1 */
-  transform: rotate(2deg); /* A very slight tilt in the opposite direction */
+  top: 15%; /* Lower than oval-1, creating the "down a little" effect */
+  left: 50%; /* More to the right than oval-1 */
+  transform: rotate(0deg); /* A very slight tilt in the opposite direction */
   z-index: 1; /* Can be behind oval-1 */
 }
 
