@@ -25,7 +25,7 @@ header {
 }
 
 .landing header {
-    background-color: none;
+    background-color: transparent;
     color: #333;
     text-align: left;
 }
