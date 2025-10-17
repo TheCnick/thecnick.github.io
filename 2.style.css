@@ -34,7 +34,6 @@ header {
   left: 0;
   height: 100%;
   display: flex;
-  justify-content: left;
   gap: 3rem;  
 }
 
