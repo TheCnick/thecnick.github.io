@@ -70,7 +70,90 @@ header {
   text-shadow: 0 0 5px var(--sage);
   color: var(--sage);
 }
-  
+
+.image-container {
+  position: relative; /* Essential for positioning child elements */
+  width: 100%; /* Make container responsive to parent width */
+  height: 500px; /* Adjust as needed, or use aspect-ratio */
+  overflow: hidden; /* Important for rotated elements */
+}
+
+.oval-wrapper {
+  position: absolute; /* Allows for precise positioning */
+  width: 30%; /* Scalable width relative to container */
+  padding-bottom: 20%; /* Creates an oval aspect ratio (adjust as needed) */
+  background-color: lightgray; /* Placeholder for visual */
+  border-radius: 50%; /* Makes it an oval/circle */
+  overflow: hidden; /* Ensures image stays within oval */
+  display: flex; /* For centering image within oval */
+  justify-content: center; /* For centering image within oval */
+  align-items: center; /* For centering image within oval */
+  transform-origin: center center; /* Ensures rotation is from the center */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for "wall" effect */
+}
+
+.oval-wrapper:hover {
+  transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.oval-1 {
+  top: 10%;
+  left: 10%;
+  transform: rotate(-15deg); /* Diagonal angle */
+  z-index: 2; /* Ensures it's on top if overlapping */
+}
+
+.oval-2 {
+  top: 40%; /* Adjust to control vertical spacing */
+  left: 55%; /* Adjust to control horizontal spacing */
+  transform: rotate(10deg); /* Diagonal angle in opposite direction */
+  z-index: 1; /* Can be adjusted if you want it behind the first */
+}
+
+.oval-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fills the oval without distorting, cropping if necessary */
+  border-radius: 50%; /* Ensures the image itself is also oval */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .oval-wrapper {
+    width: 45%; /* Larger on smaller screens */
+    padding-bottom: 30%;
+  }
+
+  .oval-1 {
+    top: 5%;
+    left: 5%;
+    transform: rotate(-10deg);
+  }
+
+  .oval-2 {
+    top: 30%;
+    left: 45%;
+    transform: rotate(5deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .oval-wrapper {
+    width: 60%;
+    padding-bottom: 40%;
+    position: static; /* Stack them vertically on very small screens */
+    margin: 20px auto;
+    transform: none; /* Remove rotation */
+  }
+
+  .image-container {
+    height: auto; /* Allow height to adjust naturally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 /* Section-specific vibes */
 .landing { background: #000000 url('/1000003518.jpg') no-repeat center center fixed; background-size: cover; }
