@@ -24,12 +24,6 @@ header {
   color: var(--cream);
 }
 
-nav {
-  gap: 3rem;
-  background: var(--gray);
-  padding: 0.5rem;
-}
-
 .sidebar { 
   display: flex;
   justify-content: left;
