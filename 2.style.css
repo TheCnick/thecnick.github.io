@@ -27,12 +27,12 @@ header {
 .landing header {
     font-family: 'Cinzel', serif;
     font-size: 40px;
-    padding-top: 15px;
     height: 2%;
     background-color: transparent;
     color: #333;
     text-align: left;
-    padding-left: 20%;
+    padding-top: 15px;
+    padding-left: 15%;
 }
 
 .sidebar { 
