@@ -26,7 +26,6 @@ header {
 
 .sidebar { 
   display: flex;
-  justify-content: left;
   gap: 3rem;
   padding: 0.5rem;
   background: #7777 100%;
