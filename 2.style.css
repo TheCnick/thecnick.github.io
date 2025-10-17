@@ -74,7 +74,7 @@ header {
 .ovals {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 600px;
   overflow: hidden; /* Still good practice for positioned elements */
   display: flex; /* Using flexbox to arrange them initially */
   justify-content: center; /* Center horizontally */
@@ -84,7 +84,7 @@ header {
 
 .oval-wrapper {
   position: absolute; /* Keep absolute positioning for precise control */
-  width: 500px; /* Adjust width to make them suitable for display */
+  width: 300px; /* Adjust width to make them suitable for display */
   padding-bottom: 10%; /* Create a taller oval aspect ratio for your plaques */
   border-radius: 50%/60%; /* This can make a more distinct oval shape if needed */
   background-color: transparent; /* Assuming your images will fill the space */
