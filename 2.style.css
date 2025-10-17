@@ -79,6 +79,7 @@ header {
 
 
 .sidebar li {
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -88,11 +89,18 @@ header {
   padding: 16px;
   text-decoration: none; 
   font-weight: bold;
+  transition: background-color 0.2s ease;
+  width: 100%;
 }
 
 .sidebar a:hover {
   text-shadow: 0 0 5px var(--sage);
   color: var(--sage);
+}
+
+.content {
+    flex-grow: 1; /* Allows main content to take remaining vertical space */
+    padding: 20px;
 }
 
 .ovals {
@@ -152,10 +160,6 @@ header {
      and instead rely on a transparent background for the oval-wrapper. */
 }
 
-.content {
-    flex-grow: 1; /* Allows main content to take remaining vertical space */
-    padding: 20px;
-}
 
 /* Section-specific vibes */
 .landing { background: #000000 url('/1000003518.jpg') no-repeat center center fixed; background-size: cover; }
