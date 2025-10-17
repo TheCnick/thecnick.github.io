@@ -123,7 +123,7 @@ header {
   object-fit: cover; /* Use 'contain' to ensure the entire plaque is visible */
   /* If your images are already pre-cropped to the oval, 'cover' might work.
      But since these are reliefs, 'contain' will likely preserve the full plaque. */
-  border-radius: 50%/60%; /* Match the border-radius of the wrapper for consistent masking */
+  border-radius: 60%/70%; /* Match the border-radius of the wrapper for consistent masking */
   /* Or, if the plaques have their own irregular shape, you might skip border-radius on img
      and instead rely on a transparent background for the oval-wrapper. */
 }
