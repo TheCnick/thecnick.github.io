@@ -60,6 +60,7 @@ nav {
   color: #ccc; /* pale bone color */
   text-decoration: none; 
   font-weight: bold;
+  display: block;
 }
 
 .sidebar a:hover {
