@@ -27,7 +27,7 @@ header {
 .landing header {
     background-color: none;
     color: #333;
-    border-bottom: 5px solid #007bff;
+    text-align: left;
 }
 
 .sidebar { 
