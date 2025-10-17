@@ -26,6 +26,7 @@ header {
 
 .sidebar { 
   padding: 0.5rem;
+  padding-right: 5rem;
   width: 150px;
   background: #7777 100%;
   overflow: auto;
