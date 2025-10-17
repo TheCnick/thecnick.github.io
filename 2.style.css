@@ -86,7 +86,7 @@ header {
   position: absolute; /* Keep absolute positioning for precise control */
   width: 350px; /* Adjust width to make them suitable for display */
   padding-bottom: 0%; /* Create a taller oval aspect ratio for your plaques */
-  border-radius: 20%/20%; /* This can make a more distinct oval shape if needed */
+  border-radius: 70%/70%; /* This can make a more distinct oval shape if needed */
   background-color: transparent; /* Assuming your images will fill the space */
   overflow: hidden; /* Keep image inside */
   display: flex;
