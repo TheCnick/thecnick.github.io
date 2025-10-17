@@ -34,7 +34,7 @@ header {
   left: 0;
   height: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   gap: 3rem;  
   margin-left: 2%;
 }
