@@ -105,7 +105,7 @@ header {
 /* Specific positioning for your two plaques */
 .oval-1 {
   height: 300px;
-  top: 10%; /* Starting position from the top */
+  top: 6%; /* Starting position from the top */
   left: 15%; /* Starting position from the left */
   transform: rotate(-3deg); /* A very slight, subtle tilt */
   z-index: 2; /* Ensures it's clearly on top if they overlap */
