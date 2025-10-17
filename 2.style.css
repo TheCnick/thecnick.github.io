@@ -13,6 +13,9 @@ body {
   background-color: var(--black);
   color: var(--cream);
   line-height: 1.6;
+  display: flex; /* Helps with layout of header, sidebar, and content */
+  flex-direction: column; /* Stacks header, content */
+  min-height: 100vh; /* Ensures body takes full height */
 }
 
 header {
