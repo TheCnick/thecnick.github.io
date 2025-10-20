@@ -186,8 +186,8 @@ header {
 .shelf img {
   top: 8%;
   left: 35%;
-  width: 45%;
-  align: right;
+  width: 55%;
+  align-items: right;
   z-index: 2;
 }
 
