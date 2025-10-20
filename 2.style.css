@@ -184,6 +184,7 @@ header {
 
 /*Galleries of Galleries Section*/
 .shelf img {
+  position: absolute;
   top: 8%;
   left: 35%;
   width: 55%;
