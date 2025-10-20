@@ -187,6 +187,7 @@ header {
   top: 8%;
   left: 35%;
   width: 45%;
+  align: right;
   z-index: 2;
 }
 
