@@ -182,6 +182,12 @@ header {
      and instead rely on a transparent background for the oval-wrapper. */
 }
 
+/*Galleries of Galleries Section*/
+
+.shelf {
+  left: 65%; 
+  top: 60%"
+}
 
 /* Section-specific vibes */
 .landing { background: #000000 url('/1000003518-dark.png') no-repeat center center fixed; background-size: cover; }
