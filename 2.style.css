@@ -184,8 +184,9 @@ header {
 
 /*Galleries of Galleries Section*/
 .shelf {
-   top: 60%;
-   left: 65%;
+  top: 60%;
+  left: 65%;
+   width: 45%;
 }
 
 /* Section-specific vibes */
