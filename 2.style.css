@@ -203,6 +203,12 @@ header {
     padding-left: 2%;
 }
 
+/*Drawer Section*/
+.drawer {
+  width: 60%;
+  margin: auto;
+}
+  
 /* Section-specific vibes */
 .landing { background: #000000 url('/1000003518-dark.png') no-repeat center center fixed; background-size: cover; }
 .galleries { background: #000000 url('/1000003518-dark.png') no-repeat center center fixed; background-size: cover; }
