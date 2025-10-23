@@ -224,7 +224,7 @@ header {
 /*Drawer Section*/
 .drawer {
     position: absolute; /* Position it relative to the viewport or a parent container */
-    top: 0;
+    top: -200;
     left: 0;
     width: 80%; /* Or set a specific width */
     height: 200px; /* IMPORTANT: You must give the div a height when using background-image */
@@ -240,8 +240,7 @@ header {
     
     /* Initially hidden above the viewport */
     /* THESE ARE THE CRITICAL LINES */
-    transform: translateY(-100%); /* This sets the initial hidden state */
-    transition: transform 0.6s ease-in-out; /* This enables the animation *
+    transition: top 0.6s ease-in-out; /* This enables the animation *
     
     /* Prevent dragging (though less critical for a div, good for consistency) */
     -webkit-user-drag: none;
@@ -252,7 +251,7 @@ header {
 }
 
 .drawer.is-open {
-    transform: translateY(0); /* Slides down to its visible position */
+    top: 0; /* Slides down to its visible position */
 }
 
 .drawer-content {
