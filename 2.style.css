@@ -218,14 +218,9 @@ header {
   transition: top 0.6s ease-in-out;
 }
 
-.drawer.is-open {
-  top: 0; /* slide down into view */
-}
-
 
 .drawer.is-open {
-  transform: translateY(0);
-}
+  top: 0;
   
   
 /* Section-specific vibes */
