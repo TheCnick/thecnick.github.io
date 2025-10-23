@@ -231,7 +231,7 @@ drawer {
     z-index: 1000;
     
     /* Image as background */
-    background-image: url('path/to/your/drawer-background-image.png'); /* <--- IMPORTANT: Update this path! */
+    background-image: url('Drawer-2.3.png'); /* <--- IMPORTANT: Update this path! */
     background-size: cover; /* Cover the entire area of the div */
     background-position: center center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
