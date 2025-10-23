@@ -83,6 +83,7 @@ body {
     justify-content: center;
     align-items: 150px;
     height: 100vh;
+    padding-top: 200px;
     box-sizing: border-box;
     position: relative; 
 }
