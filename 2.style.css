@@ -205,7 +205,7 @@ header {
 
 /*Drawer Section*/
 .drawer {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 5%;
   width: 80%;
