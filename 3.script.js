@@ -2,7 +2,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const drawer = document.getElementById('drawer2');
 
-    setTimeout(() => {
-        drawer.classList.add('is-open');
-    }, 200); // Let's keep this at 200ms for now
+    // Make sure 'drawer' is not null before trying to add a class
+    if (drawer) {
+        setTimeout(() => {
+            drawer.classList.add('is-open');
+        }, 200); // Give it a moment to ensure CSS is parsed
+    } else {
+        console.error('Drawer element with ID "drawer2" not found!');
+    }
 });
