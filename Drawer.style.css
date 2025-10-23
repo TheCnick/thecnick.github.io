@@ -36,7 +36,7 @@
     top: 0;
     left: 0;
     width: 100%; /* Now this should take precedence */
-    height: 100vh;
+    height: 0;
     z-index: 1000;
     
     background-image: url('Drawer-2.3.png'); 
