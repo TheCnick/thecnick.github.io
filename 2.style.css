@@ -207,7 +207,7 @@ header {
 .drawer {
   width: 80%;
   margin: auto;
-  position: fixed;
+  position: relative;
   top: 20%;
   left: 0;
   z-index: 1000;
