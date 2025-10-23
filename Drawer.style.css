@@ -50,7 +50,7 @@ html {
     
     background-image: url('Drawer-2.3.png'); 
     background-size: contain;
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-color: transparent; /* Now this should take precedence */
     
