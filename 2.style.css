@@ -227,7 +227,7 @@ drawer {
     top: 0;
     left: 0;
     width: 80%;; /* Or set a specific width */
-    height: 200px; /* IMPORTANT: You must give the div a height when using background-image */
+    height: 941px; /* IMPORTANT: You must give the div a height when using background-image */
     z-index: 1000;
     
     /* Image as background */
@@ -235,7 +235,7 @@ drawer {
     background-size: cover; /* Cover the entire area of the div */
     background-position: center center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-color: #2c3e50;
+    background-color: transparent;
   
   /* Apply shadow to the div */
     
