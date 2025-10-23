@@ -92,9 +92,9 @@ body {
 .drawer-content img {
     display: flex;
     justify-content: center;
-    align-items: 500px;
-    width: 90px;
-    height: 90px;
+    align-items: 800px;
+    width: 13vh;
+    height: 13vh;
     position: relative; 
 }
 
