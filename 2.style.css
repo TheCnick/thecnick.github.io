@@ -270,13 +270,13 @@ header {
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translate(-50%, 100%);
     width: 150px;
     height: auto;
     filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4));
     /* Prevents the user from dragging the image */
     -webkit-user-drag: none;
     user-select: none;
+    transform: translate(-50%, 100%);
 }
 
   
