@@ -66,7 +66,7 @@ html {
 /* Keep the class-based selector for the open state, but ensure it's specific enough */
 /* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
 .drawer.is-open { 
-    transform: translateY(100%) !important; 
+    transform: translateY(89%) !important; 
 }
 
 /* Styles for drawer-content and icon-link can remain as they are, 
