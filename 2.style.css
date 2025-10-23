@@ -28,7 +28,7 @@ header {
   color: var(--cream);
 }
 
-.drawer-header {
+.drawer-header header {
     background: var(--sage);
     padding: 1rem;
     text-align: center;
