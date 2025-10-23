@@ -227,7 +227,7 @@ drawer {
     top: 0;
     left: 0;
     width: 80%;; /* Or set a specific width */
-    height: 941px; /* IMPORTANT: You must give the div a height when using background-image */
+    height: 200px; /* IMPORTANT: You must give the div a height when using background-image */
     z-index: 1000;
     
     /* Image as background */
