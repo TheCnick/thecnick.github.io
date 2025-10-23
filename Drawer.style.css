@@ -89,13 +89,11 @@ body {
 
 .drawer-content img {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 5vh;
     height: 5vh;
     position: absolute;
-    top: 15%
-    left 56%;
+    top: 0%
+    left 66%;
 }
 
 .icon-link {
