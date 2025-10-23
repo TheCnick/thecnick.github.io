@@ -239,8 +239,9 @@ drawer {
     filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4)); /* Apply shadow to the div */
     
     /* Initially hidden above the viewport */
-    transform: translateY(-100%); 
-    transition: transform 0.6s ease-in-out;
+    /* THESE ARE THE CRITICAL LINES */
+    transform: translateY(-100%); /* This sets the initial hidden state */
+    transition: transform 0.6s ease-in-out; /* This enables the animation *
     
     /* Prevent dragging (though less critical for a div, good for consistency) */
     -webkit-user-drag: none;
