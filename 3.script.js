@@ -12,4 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         drawer.classList.add('is-open');
     }, 200); // 200 milliseconds = 0.2 seconds
+    
+     drawer.addEventListener('click', () => {
+        drawer.classList.toggle('is-open');
+    });
 });
