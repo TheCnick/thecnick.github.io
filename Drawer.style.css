@@ -28,7 +28,7 @@
 /* style.css */
 
 /* Target the specific ID for higher specificity */
-#drawer2 { 
+drawer { 
     position: absolute;
     top: 0;
     left: 0;
