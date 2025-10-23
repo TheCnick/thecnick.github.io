@@ -26,62 +26,41 @@
 
 
 
-drawer {
-    position: absolute; /* Position it relative to the viewport or a parent container */
+#drawer2 { /* Or .drawer, but #drawer2 is more specific as we discussed */
+    position: absolute;
     top: 0;
     left: 0;
-    width: 80%; /* Or set a specific width */
-    height: 200px; /* IMPORTANT: You must give the div a height when using background-image */
+    width: 80%;
+    height: 200px;
     z-index: 1000;
-
     
-
-    /* Image as background */
-
-    background-image: url('Drawer-2.3.png'); /* <--- IMPORTANT: Update this path! */
-    background-size: cover; /* Cover the entire area of the div */
-    background-position: center center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-image: url('path/to/your/drawer-background-image.png'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-color: #2c3e50;
-
-  
-
-  /* Apply shadow to the div */
-
     
-
-    /* Initially hidden above the viewport */
-
-    /* THESE ARE THE CRITICAL LINES */
-    transform: translateY(-100%); 
-    transition: transform 0.6s ease-in-out; 
-
+    transform: translateY(-100%); /* THIS MUST BE APPLIED FIRST */
+    transition: transform 0.6s ease-in-out; /* THIS MUST BE APPLIED FIRST */
     
-
-    /* Prevent dragging (though less critical for a div, good for consistency) */
     -webkit-user-drag: none;
     user-select: none;
-  
-    /* If your image has transparent parts, you might want a fallback background color */
-    background-color: #2c3e50; /* Fallback or base color */
-
 }
 
-.drawer.is-open {
-    transform: translateY(0)
+/* 2. Styles for when the drawer is open (appears AFTER the base styles) */
+#drawer2.is-open { /* Use #drawer2.is-open for consistent specificity, or just .drawer.is-open */
+    transform: translateY(0); /* This will override the -100% when the class is added */
 }
 
+/* 3. Styles for content within the drawer */
 .drawer-content {
-    /* These styles will position content within the .drawer div */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 100%; /* Ensure content takes full height of the drawer for centering */
-    box-sizing: border-box; /* Include padding in height */
-    /* You might want to remove position: absolute; if .drawer-content is a direct child */
-    /* and you want it to flow normally within the drawer. */
-    position: relative; /* Keep relative if you want to position children absolutely within it */
+    height: 100%;
+    box-sizing: border-box;
+    position: relative; 
 }
 
 .icon-link {
@@ -91,11 +70,9 @@ drawer {
     margin: 0 20px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out 0.4s;
-    /* Ensure icon links are visible over the background image */
-    /* text-shadow: 0 0 5px rgba(0,0,0,0.5); /* Optional: add shadow for better contrast */
 }
 
-.drawer.is-open .icon-link {
+#drawer2.is-open .icon-link { /* Ensure icon links also animate when drawer is open */
     opacity: 1;
 }
 
