@@ -95,8 +95,6 @@ body {
     align-items: 500px;
     padding: 20px;
     padding-top: 120px;
-    height: 100%;
-    box-sizing: border-box;
     position: relative; 
 }
 
