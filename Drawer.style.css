@@ -43,7 +43,7 @@ html {
     top: 0;
     left: 0;
     width: 100vw; /* Now this should take precedence */
-    height: 100%;
+    height: 80vh;
     z-index: 1000;
     
     background-image: url('Drawer-2.3.png'); 
