@@ -40,7 +40,7 @@
     z-index: 1000;
     
     background-image: url('Drawer-2.3.png'); 
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     background-color: transparent; /* Now this should take precedence */
