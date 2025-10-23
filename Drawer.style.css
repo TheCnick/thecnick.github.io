@@ -29,14 +29,14 @@
 
 /* Target the specific ID for higher specificity */
 #drawer2 { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 80%; /* Now this should take precedence */
     height: 100vh;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
     z-index: 1000;
     
     background-image: url('Drawer-2.3.png'); 
