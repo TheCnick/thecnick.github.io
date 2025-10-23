@@ -89,6 +89,17 @@ body {
     position: relative; 
 }
 
+.drawer-content img {
+    display: flex;
+    justify-content: center;
+    align-items: 500px;
+    padding: 20px;
+    padding-top: 120px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative; 
+}
+
 .icon-link {
     color: white;
     text-decoration: none;
