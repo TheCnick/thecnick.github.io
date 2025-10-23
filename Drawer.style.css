@@ -1,5 +1,5 @@
 :root {
-  --sage: #3a4a3f
+  --sage: #3a4a3f;
   --cream: #f4f1ea;
   --black: #121212;
   --gray: #2e2e2e;
@@ -28,7 +28,7 @@
 /* style.css */
 
 /* Target the specific ID for higher specificity */
-drawer { 
+#drawer2 { 
     position: absolute;
     top: 0;
     left: 0;
