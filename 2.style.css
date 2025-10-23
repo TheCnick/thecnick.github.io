@@ -208,7 +208,7 @@ header {
   width: 80%;
   margin: auto;
   position: fixed;
-  top: 10%;
+  top: 50%;
   left: 0;
   z-index: 1000;
   transform: translateY(-100%);
