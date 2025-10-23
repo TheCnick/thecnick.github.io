@@ -15,6 +15,13 @@ html {
     box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  background-color: var(--black);
+  color: var(--cream);
+  line-height: 1.6;
+}
+  
 .drawer-header {
     background: var(--sage);
     padding: 1rem;
