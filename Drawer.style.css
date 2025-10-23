@@ -81,7 +81,7 @@ body {
 .drawer-content {
     display: flex;
     justify-content: center;
-    align-items: 800px;
+    align-items: 30vh;
     padding: 20px;
     height: 100vh;
     box-sizing: border-box;
