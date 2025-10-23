@@ -83,7 +83,7 @@ body {
     justify-content: center;
     align-items: 150px;
     height: 100vh;
-    padding-top: 45vh;
+    padding-top: 25vh;
     box-sizing: border-box;
     position: relative; 
 }
@@ -94,7 +94,7 @@ body {
     align-items: center;
     width: 5vh;
     height: 5vh;
-    position: relative; 
+    position: fixed; 
 }
 
 .icon-link {
