@@ -235,7 +235,7 @@ drawer {
     background-size: cover; /* Cover the entire area of the div */
     background-position: center center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-color: transparent;
+    background-color: #2c3e50;
   
   /* Apply shadow to the div */
     
