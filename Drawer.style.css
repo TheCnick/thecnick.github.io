@@ -40,7 +40,7 @@ html {
 #drawer2 { 
     display: flex; 
     justify-content: center; 
-    align-items: center;
+    align-items: flex-start;
     position: fixed;
     top: 0;
     left: 0;
