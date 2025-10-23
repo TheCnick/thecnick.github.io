@@ -6,6 +6,13 @@
   --header-height: 120px;
 }
 
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 .drawer-header {
     background: var(--sage);
     padding: 1rem;
