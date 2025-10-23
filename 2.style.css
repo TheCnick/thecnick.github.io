@@ -268,7 +268,7 @@ header {
 /* New styles for the handle */
 .drawer-image {
     position: absolute;
-    left: 5%;
+    left: 0;
     bottom: 0;
     width: 60%;
     height: auto;
