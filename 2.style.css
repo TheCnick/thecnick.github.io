@@ -226,7 +226,7 @@ drawer {
     position: absolute; /* Position it relative to the viewport or a parent container */
     top: 0;
     left: 0;
-    width: 80%;; /* Or set a specific width */
+    width: 80%; /* Or set a specific width */
     height: 200px; /* IMPORTANT: You must give the div a height when using background-image */
     z-index: 1000;
     
