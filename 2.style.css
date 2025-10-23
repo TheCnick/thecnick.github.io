@@ -222,7 +222,7 @@ header {
 }
 
 /*Drawer Section*/
-.drawer {
+drawer {
     position: absolute; /* Position it relative to the viewport or a parent container */
     top: 0;
     left: 0;
