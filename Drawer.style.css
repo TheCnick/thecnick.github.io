@@ -38,7 +38,7 @@
     
     background-image: url('Drawer-2.3.png'); 
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: transparent; /* Now this should take precedence */
     
