@@ -25,33 +25,40 @@
 
 
 
-#drawer2 { /* Or .drawer, but #drawer2 is more specific as we discussed */
+/* style.css */
+
+/* Target the specific ID for higher specificity */
+#drawer2 { 
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 200px;
+    width: 80%; /* Now this should take precedence */
+    height: 200px; 
     z-index: 1000;
     
-    background-image: url('Drawer-2.3.png'); 
+    background-image: url('path/to/your/drawer-background-image.png'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #2c3e50;
+    background-color: #2c3e50; /* Now this should take precedence */
     
-    transform: translateY(-100%); /* THIS MUST BE APPLIED FIRST */
-    transition: transform 0.6s ease-in-out; /* THIS MUST BE APPLIED FIRST */
+    /* filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4)); */
+    
+    transform: translateY(-100%); /* THIS SHOULD NOW TAKE PRECEDENCE */
+    transition: transform 0.6s ease-in-out; 
     
     -webkit-user-drag: none;
     user-select: none;
 }
 
-/* 2. Styles for when the drawer is open (appears AFTER the base styles) */
-#drawer2.is-open { /* Use #drawer2.is-open for consistent specificity, or just .drawer.is-open */
-    transform: translateY(0); /* This will override the -100% when the class is added */
+/* Keep the class-based selector for the open state, but ensure it's specific enough */
+/* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
+.drawer.is-open { 
+    transform: translateY(0); 
 }
 
-/* 3. Styles for content within the drawer */
+/* Styles for drawer-content and icon-link can remain as they are, 
+   unless they are also being overridden. */
 .drawer-content {
     display: flex;
     justify-content: center;
@@ -71,7 +78,7 @@
     transition: opacity 0.5s ease-in-out 0.4s;
 }
 
-#drawer2.is-open .icon-link { /* Ensure icon links also animate when drawer is open */
+.drawer.is-open .icon-link {
     opacity: 1;
 }
 
@@ -80,5 +87,4 @@
     display: block;
     margin-bottom: 8px;
 }
-
   
