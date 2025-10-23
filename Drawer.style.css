@@ -93,8 +93,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: 500px;
-    width: auto;
-    height: 120px;
+    width: 90px;
+    height: 150px;
     padding-top: 120px;
     position: relative; 
 }
