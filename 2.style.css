@@ -207,7 +207,14 @@ header {
 .drawer {
   width: 60%;
   margin: auto;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
 }
+
+.drawer.is-open {
+  transform: translateY(0);
+}
+  
   
 /* Section-specific vibes */
 .landing { background: #000000 url('/1000003518-dark.png') no-repeat center center fixed; background-size: cover; }
