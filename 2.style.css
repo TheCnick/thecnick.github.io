@@ -206,23 +206,26 @@ header {
 /*Drawer Section*/
 .drawer {
   position: absolute;
-  top: 0;
-  left: 5%;
-  width: 80%;
+  top: 100px; /* match header height */
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transition: transform 0.6s ease-in-out;
   z-index: 1000;
-  overflow: hidden; /* ensures clean animation */
+  width: auto;
+  height: auto;
 }
 
 .drawer img {
-  transform: translateY(-100%);
-  transition: transform 0.6s ease-in-out;
-  width: 100%; /* optional: scale image to container */
   display: block;
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.6s ease-in-out;
 }
 
-.drawer.is-open img {
-  transform: translateY(-50%,0);
+.drawer.is-open {
+  transform: translate(-50%, 0);
 }
+
 
   
   
