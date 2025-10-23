@@ -206,9 +206,10 @@ header {
 /*Drawer Section*/
 .drawer {
   width: 80%;
+  height: 50%;
   margin: auto;
   position: fixed;
-  top: 50%;
+  top:  0;
   left: 0;
   z-index: 1000;
   transform: translateY(-100%);
