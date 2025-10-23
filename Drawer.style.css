@@ -42,7 +42,7 @@ html {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* Now this should take precedence */
+    width: 100vw; /* Now this should take precedence */
     height: 100%;
     z-index: 1000;
     
