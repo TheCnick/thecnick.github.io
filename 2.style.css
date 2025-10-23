@@ -236,7 +236,7 @@ header {
     background-position: center center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     
-    filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4)); /* Apply shadow to the div */
+  /* Apply shadow to the div */
     
     /* Initially hidden above the viewport */
     /* THESE ARE THE CRITICAL LINES */
