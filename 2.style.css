@@ -211,7 +211,6 @@ header {
   top: -200px; /* start off-screen */
   left: 10%;
   z-index: 1000;
-  background-color: lightgray; /* for visibility */
   display: flex;
   justify-content: center;
   align-items: center;
