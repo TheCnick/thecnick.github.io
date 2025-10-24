@@ -40,7 +40,7 @@ body {
 /* style.css */
 
 /* Target the specific ID for higher specificity */
-#drawer2 { 
+#drawer-container { 
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +62,7 @@ body {
 
 /* Keep the class-based selector for the open state, but ensure it's specific enough */
 /* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
-#drawer2.is-open { 
+#drawer-container.is-open { 
     transform: translateY(0); 
 }
 
@@ -119,7 +119,7 @@ body {
     transition: opacity 0.5s ease-in-out 0.4s;
 }
 
-.drawer2.is-open .icon-link {
+#drawer-container.is-open .icon-link {
     opacity: 1;
 }
 
