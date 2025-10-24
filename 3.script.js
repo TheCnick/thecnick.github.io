@@ -1,6 +1,6 @@
 // This is the entire content for your script.js file
 document.addEventListener('DOMContentLoaded', () => {
-    const drawer = document.getElementById('drawer2');
+    const drawer = document.getElementById('drawer-container');
 
     if (drawer) {
         console.log('Drawer element found.');
@@ -21,6 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('is-open class added. Animation should start.');
         }, 50); // Small delay, just to be safe
     } else {
-        console.error('Drawer element with ID "drawer2" not found!');
+        console.error('Drawer element with ID "drawer-container" not found!');
     }
 });
