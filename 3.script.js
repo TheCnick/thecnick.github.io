@@ -1,26 +1,22 @@
 // This is the entire content for your script.js file
 document.addEventListener('DOMContentLoaded', () => {
-    const drawer = document.getElementById('drawer-container');
+    const drawerContainer = document.getElementById('drawer-container');
+    const header = document.querySelector('.drawer-header');
 
-    if (drawer) {
-        console.log('Drawer element found.');
-        
-        // Ensure initial state is set before the browser paints anything
-        drawer.style.transform = 'translateY(calc(-100% + var(--header-height)))'; 
-        drawer.classList.remove('is-open'); // Ensure 'is-open' is not there initially
-
-        // Force a reflow (browser renders current state)
-        // This is crucial for the transition to detect a change
-        void drawer.offsetHeight; 
-
-        console.log('Initial state set and reflow forced.');
-
-        // Now, add the 'is-open' class after a very short delay
-        setTimeout(() => {
-            drawer.classList.add('is-open');
-            console.log('is-open class added. Animation should start.');
-        }, 50); // Small delay, just to be safe
-    } else {
-        console.error('Drawer element with ID "drawer-container" not found!');
+    if (header && drawerContainer) {
+        header.addEventListener('click', () => {
+            // This is the ONLY place you should be modifying the drawer's open/close state.
+            // DO NOT directly set element.style.transform here.
+            drawerContainer.classList.toggle('is-open'); 
+        });
     }
+
+    // Optional: Close drawer when clicking outside
+    document.addEventListener('click', (event) => {
+        if (drawerContainer.classList.contains('is-open') && 
+            !drawerContainer.contains(event.target) && 
+            !header.contains(event.target)) {
+            drawerContainer.classList.remove('is-open');
+        }
+    });
 });
