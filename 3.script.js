@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Drawer element found.');
         
         // Ensure initial state is set before the browser paints anything
-        drawer.style.transform = 'translateY(-100%)'; 
+        drawer.style.transform = 'translateY(calc(-100% + var(--header-height)))'; 
         drawer.classList.remove('is-open'); // Ensure 'is-open' is not there initially
 
         // Force a reflow (browser renders current state)
