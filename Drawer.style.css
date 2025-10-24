@@ -5,7 +5,7 @@
   --cream: #f4f1ea;
   --black: #121212;
   --gray: #2e2e2e;
-  --header-height: 120px;
+  --header-height: 15%;
   --drawer-handle-visible-height: 275px; /* <--- ADJUST THIS TO MATCH THE VISIBLE PART OF YOUR DRAWER IMAGE */
   --base-drawer-width: 796px; /* The original pixel width of your drawer image */
   --base-drawer-height: 941px; /* The original pixel height of your drawer image */
@@ -64,7 +64,7 @@ body {
 /* Target the specific ID for higher specificity */
 #drawer-container { 
     position: fixed;
-    top: 120px;
+    top: 15%;
     left: 0;
     width: 100vw; /* Now this should take precedence */
     height: var(--final-responsive-height);
