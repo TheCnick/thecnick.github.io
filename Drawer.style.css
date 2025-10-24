@@ -116,7 +116,7 @@ body {
 
 .drawer-content img {
     /* Adjust these values to place your oval picture precisely where you want it within the drawer image */
-    width: calc(var(--final-responsive-width) * 0.15); /* Adjust 0.15 */
+    width: calc(var(--final-responsive-width) * 0.10); /* Adjust 0.15 */
     height: auto;
     /* top: 35%; 
     left: 46%; */
