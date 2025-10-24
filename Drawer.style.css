@@ -80,15 +80,15 @@ body {
     width: 60vw;
     height: 60vh;
     box-sizing: border-box;
-    position: relative; 
+    position: fixed; 
 }
 
 .drawer-content img {
     width: 5vh;
     height: 5vh;
-    position: relative;
     top: 35%;
     left: 46%;
+    position: relative;
 }
 
 .icon-link {
