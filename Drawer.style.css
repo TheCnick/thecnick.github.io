@@ -6,7 +6,7 @@
   --black: #121212;
   --gray: #2e2e2e;
   --header-height: 120px;
-  --drawer-handle-visible-height: 180px; /* <--- ADJUST THIS TO MATCH THE VISIBLE PART OF YOUR DRAWER IMAGE */
+  --drawer-handle-visible-height: 280px; /* <--- ADJUST THIS TO MATCH THE VISIBLE PART OF YOUR DRAWER IMAGE */
   --base-drawer-width: 796px; /* The original pixel width of your drawer image */
   --base-drawer-height: 941px; /* The original pixel height of your drawer image */
 
