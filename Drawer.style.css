@@ -85,6 +85,7 @@ body {
 .drawer-content img {
     width: 5vh;
     height: 5vh;
+    position: relative;
     top: 58%;
     left: 66%;
 }
