@@ -92,9 +92,8 @@ body {
     display: flex;
     width: 5vh;
     height: 5vh;
-    position: relative;
-    top: 30vh;
-    left: 66vw;
+    top: 28%;
+    left: 66%;
 }
 
 .icon-link {
