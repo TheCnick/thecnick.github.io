@@ -83,10 +83,9 @@ body {
 }
 
 .drawer-content img {
-    display: flex;
     width: 5vh;
     height: 5vh;
-    top: 35%;
+    top: 58%;
     left: 66%;
 }
 
