@@ -81,7 +81,7 @@ body {
 /* Keep the class-based selector for the open state, but ensure it's specific enough */
 /* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
 #drawer-container.is-open { 
-    transform: translateY(0); 
+    transform: translateY(-120px); 
 }
 
 .drawer-background-image {
