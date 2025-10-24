@@ -6,6 +6,8 @@
   --black: #121212;
   --gray: #2e2e2e;
   --header-height: 120px;
+  --drawer-image-height: 100%; /* Define a height for your drawer image */
+  --drawer-image-width: 100%; /* Define a width for your drawer image */
 }
 
 
@@ -43,14 +45,14 @@ body {
     top: 0;
     left: 0;
     width: 100vw; /* Now this should take precedence */
-    height: 100vh;
+    height: var(--drawer-image-height);
     z-index: 1000;
     display: flex; 
     justify-content: center; 
     align-items: 118px;
    
     
-    transform: translateY(-100%); /* THIS SHOULD NOW TAKE PRECEDENCE */
+    transform: translateY(calc(-100% + var(--header-height))); /* THIS SHOULD NOW TAKE PRECEDENCE */
     transition: transform 0.6s ease-in-out; 
     
     -webkit-user-drag: none;
@@ -58,41 +60,40 @@ body {
     overflow: hidden;
 }
 
+/* Keep the class-based selector for the open state, but ensure it's specific enough */
+/* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
+#drawer2.is-open { 
+    transform: translateY(0); 
+}
+
 .drawer-background-image {
     position: absolute; /* Position it absolutely within the drawer container */
     top: 0; /* Align to the top of the container */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect centering */
-    width: auto; /* Let the image define its width based on aspect ratio */
-    max-width: 100%; /* Ensure it doesn't overflow horizontally */
-    height: 100%; /* Make it fill the height of its parent container */
+    width: var(--drawer-image-width);
     object-fit: contain; /* Ensure the entire image is visible without cropping */
     z-index: 1; /* Behind the content */
+    pointer-events: none; /* Allows clicks to pass through to the drawer container */
 }
   
     /* filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4)); */
-
-
-/* Keep the class-based selector for the open state, but ensure it's specific enough */
-/* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
-.drawer.is-open { 
-    transform: translateY(0); 
-}
 
 
 /* Styles for drawer-content and icon-link can remain as they are, 
    unless they are also being overridden. */
 .drawer-content {
     position: relative; /* Position relative to the drawer-container */
+    top: calc(var(--header-height) + 50px); /* Adjust this value to place content below handle, e.g., 50px further down */
+     left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    width: auto; /* Content width based on its children */
+    height: auto; /* Content height based on its children */
     z-index: 2; /* On top of the drawer image */
     display: flex;
     justify-content: center;
-    align-items: center; /* Center the image within this content area */
-    width: 100%; /* Take full width of parent */
-    height: 100%; /* Take full height of parent (drawer-container) */
-    padding-top: var(--header-height); /* Push content down to account for the header and handle part of the drawer image */
-    box-sizing: border-box;
-    pointer-events: none; /* Allows clicks to pass through to the drawer itself if needed */
+    align-items: center;
+    /* For debugging: background-color: rgba(0, 255, 0, 0.3); */
 }
 
 .drawer-content img {
@@ -105,8 +106,8 @@ body {
     /* Example for fine-tuning with margins if centered: */
     /* margin-top: -20px; */ /* Move up slightly from center */
     /* margin-left: -10px; */ /* Move left slightly from center */
-    position: relative; /* Keep relative if you want to adjust with margins */
-    pointer-events: auto; /* Make the image clickable */
+    display: block; /* Ensure it behaves as a block element */
+    pointer-events: auto; /* Make the image clickable if needed */
 }
 
 .icon-link {
@@ -118,7 +119,7 @@ body {
     transition: opacity 0.5s ease-in-out 0.4s;
 }
 
-.drawer.is-open .icon-link {
+.drawer2.is-open .icon-link {
     opacity: 1;
 }
 
@@ -127,4 +128,10 @@ body {
     display: block;
     margin-bottom: 8px;
 }
-  
+
+.content {
+  padding-top: calc(var(--header-height) + 20px); /* Push main content down below the header */
+  text-align: center;
+}
+
+
