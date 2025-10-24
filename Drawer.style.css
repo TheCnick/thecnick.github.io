@@ -7,7 +7,6 @@
   --gray: #2e2e2e;
   --header-height: 120px;
   --drawer-handle-visible-height: 260px; /* <--- ADJUST THIS TO MATCH THE VISIBLE PART OF YOUR DRAWER IMAGE */
-  --drawer-top-shadow-height: 300px; /* <--- ADJUST THIS VALUE! */
   --base-drawer-width: 796px; /* The original pixel width of your drawer image */
   --base-drawer-height: 941px; /* The original pixel height of your drawer image */
 
@@ -71,7 +70,7 @@ body {
     height: var(--final-responsive-height);
     z-index: 1000;
     
-    transform: translateY(calc(-100% + var(--drawer-handle-visible-height) + var(--drawer-top-shadow-height)));
+    transform: translateY(calc(-100% + var(--drawer-handle-visible-height))); 
     transition: transform 0.6s ease-in-out;
 
     overflow: hidden;
@@ -82,7 +81,7 @@ body {
 /* Keep the class-based selector for the open state, but ensure it's specific enough */
 /* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
 #drawer-container.is-open { 
-    transform: translateY(calc(var(--drawer-top-shadow-height) * -1)); 
+    transform: translateY(0); 
 }
 
 .drawer-background-image {
@@ -104,7 +103,7 @@ body {
    unless they are also being overridden. */
 .drawer-content {
     position: absolute; 
-    top: calc(var(--drawer-handle-visible-height) + var(--drawer-top-shadow-height) + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
+    top: calc(var(--drawer-handle-visible-height) + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
     left: 50%; 
     transform: translateX(-50%); 
     z-index: 2; 
