@@ -12,12 +12,23 @@
   /* Calculate an aspect ratio for consistent scaling */
   --drawer-aspect-ratio: calc(var(--base-drawer-height) / var(--base-drawer-width));
 
-  /* Define how much of the viewport width the drawer should occupy */
-  --drawer-viewport-width-percentage: 60vw; /* e.g., 60% of viewport width */
+ /* Define desired max width relative to viewport, or fixed */
+  --max-drawer-display-width: min(var(--base-drawer-width), 60vw); /* Don't exceed base width or 60% of viewport width */
+ /* Define desired max height relative to viewport, or fixed */
+  /* This is crucial to prevent cutoff */
+  --max-drawer-display-height: calc(100vh - var(--header-height) - 20px); /* Example: screen height minus header and some buffer */
 
-  /* Calculate the actual drawer width and height based on viewport */
-  --responsive-drawer-width: min(var(--base-drawer-width), var(--drawer-viewport-width-percentage));
-  --responsive-drawer-height: calc(var(--responsive-drawer-width) * var(--drawer-aspect-ratio));
+  /* Calculate the responsive dimensions for the drawer */
+  /* This logic ensures it fits within BOTH width and height constraints while maintaining aspect ratio */
+  --responsive-drawer-width-based-on-width: var(--max-drawer-display-width);
+  --responsive-drawer-height-based-on-width: calc(var(--responsive-drawer-width-based-on-width) * var(--drawer-aspect-ratio));
+
+  --responsive-drawer-height-based-on-height: var(--max-drawer-display-height);
+  --responsive-drawer-width-based-on-height: calc(var(--responsive-drawer-height-based-on-height) / var(--drawer-aspect-ratio));
+
+  /* Final responsive width/height: Use whichever constraint (width or height) makes the drawer smaller */
+  --final-responsive-width: min(var(--responsive-drawer-width-based-on-width), var(--responsive-drawer-width-based-on-height));
+  --final-responsive-height: min(var(--responsive-drawer-height-based-on-width), var(--responsive-drawer-height-based-on-height));
 }
 
 
@@ -55,7 +66,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw; /* Now this should take precedence */
-    height: var(--responsive-drawer-height);
+    height: var(--final-responsive-height);
     z-index: 1000;
    
     
@@ -78,8 +89,8 @@ body {
     top: 0; /* Align to the top of the container */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust for perfect centering */
-    width: var(--responsive-drawer-width);
-    height: var(--responsive-drawer-height); 
+    width: var(--final-responsive-width); /* Now uses the final calculated width */
+    height: var(--final-responsive-height); /* Now uses the final calculated height */
     object-fit: contain; /* Ensure the entire image is visible without cropping */
     z-index: 1; /* Behind the content */
     pointer-events: none; /* Allows clicks to pass through to the drawer container */
@@ -92,7 +103,7 @@ body {
    unless they are also being overridden. */
 .drawer-content {
     position: absolute; 
-    top: calc(var(--header-height) + (var(--responsive-drawer-height) * 0.2)); /* Example: 20% down from the header-height part */
+    top: calc(var(--header-height) + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
     left: 50%; 
     transform: translateX(-50%); 
     z-index: 2; 
@@ -105,7 +116,7 @@ body {
 
 .drawer-content img {
     /* Adjust these values to place your oval picture precisely where you want it within the drawer image */
-    width: calc(var(--responsive-drawer-width) * 0.15); /* Example: 15% of the drawer's responsive width */
+    width: calc(var(--final-responsive-width) * 0.15); /* Adjust 0.15 */
     height: auto;
     /* top: 35%; 
     left: 46%; */
