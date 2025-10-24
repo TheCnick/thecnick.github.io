@@ -70,7 +70,7 @@ body {
     height: var(--final-responsive-height);
     z-index: 1000;
     
-    transform: translateY(calc(-100%))); 
+    transform: translateY(calc(-100% + var(--drawer-handle-visible-height)));
     transition: transform 0.6s ease-in-out;
 
     overflow: hidden;
