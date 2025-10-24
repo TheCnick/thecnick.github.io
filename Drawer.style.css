@@ -51,7 +51,7 @@ body {
    
     
     transform: translateY(-100%); /* THIS SHOULD NOW TAKE PRECEDENCE */
-    transition: transform 0.6s ease-in-out !important; 
+    transition: transform 0.6s ease-in-out; 
     
     -webkit-user-drag: none;
     user-select: none;
@@ -76,7 +76,7 @@ body {
 /* Keep the class-based selector for the open state, but ensure it's specific enough */
 /* You could also use #drawer2.is-open if needed, but .drawer.is-open is usually fine */
 .drawer.is-open { 
-    transform: translateY(0) !important; 
+    transform: translateY(0); 
 }
 
 
