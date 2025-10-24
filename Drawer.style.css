@@ -6,8 +6,18 @@
   --black: #121212;
   --gray: #2e2e2e;
   --header-height: 120px;
-  --drawer-image-height: 941px; /* Define a height for your drawer image */
-  --drawer-image-width: 796px; /* Define a width for your drawer image */
+  --base-drawer-width: 796px; /* The original pixel width of your drawer image */
+  --base-drawer-height: 941px; /* The original pixel height of your drawer image */
+
+  /* Calculate an aspect ratio for consistent scaling */
+  --drawer-aspect-ratio: calc(var(--base-drawer-height) / var(--base-drawer-width));
+
+  /* Define how much of the viewport width the drawer should occupy */
+  --drawer-viewport-width-percentage: 60vw; /* e.g., 60% of viewport width */
+
+  /* Calculate the actual drawer width and height based on viewport */
+  --responsive-drawer-width: min(var(--base-drawer-width), var(--drawer-viewport-width-percentage));
+  --responsive-drawer-height: calc(var(--responsive-drawer-width) * var(--drawer-aspect-ratio));
 }
 
 
@@ -45,7 +55,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw; /* Now this should take precedence */
-    height: var(--drawer-image-height);
+    height: var(--responsive-drawer-height);
     z-index: 1000;
    
     
