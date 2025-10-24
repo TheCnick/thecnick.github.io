@@ -112,6 +112,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px; /* Move up slightly from center */
+    margin-left: 10px; /* Move left slightly from center */
+    margin-bottom: 50px;
+    margin-right: 10px;
 }
 
 .drawer-content img {
