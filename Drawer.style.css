@@ -64,7 +64,7 @@ body {
 /* Target the specific ID for higher specificity */
 #drawer-container { 
     position: fixed;
-    top: 10%;
+    top: 0;
     left: 0;
     width: 100vw; /* Now this should take precedence */
     height: var(--final-responsive-height);
