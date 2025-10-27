@@ -35,7 +35,7 @@
 
 body {
   margin: 0;
-  background-color: var(--black);
+  background-color: var(--black) url('Carpet_Fragment_(USA),_19th_century_(CH_18423247).jpg');;
   color: var(--cream);
   line-height: 1.6;
 }
@@ -162,7 +162,6 @@ body {
 .content {
   padding-top: calc(var(--header-height) + 20px); /* Push main content down below the header */
   text-align: center;
-  background: url('Carpet_Fragment_(USA),_19th_century_(CH_18423247).jpg');
 }
 
 
