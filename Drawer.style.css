@@ -132,8 +132,10 @@ body {
     left: 46%;*/
     /* With flexbox centering, you might not need top/left. If you need fine-tuning, use margin or absolute positioning */
     /* Example for fine-tuning with margins if centered: */
-    margin-top: 20px;/* Move up slightly from center */
-    margin-left: 50px; /* Move left slightly from center */
+    margin-top: 10%;/* Move up slightly from center */
+    margin-left: 50%;/* Move left slightly from center */
+    margin-bottom: 90%;
+    margin-right:50%;
    /* display: block;*/ /* Ensure it behaves as a block element */
     pointer-events: auto; /* Make the image clickable if needed */
 }
