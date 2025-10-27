@@ -128,8 +128,8 @@ body {
     width: calc(var(--final-responsive-width) * 0.10); /* Adjust 0.15 */
     height: auto;
     object-fit: contain; /* Ensure the entire image is visible without cropping */
-    top: 35%; 
-    left: 46%;
+    /*top: 35%; 
+    left: 46%;*/
     /* With flexbox centering, you might not need top/left. If you need fine-tuning, use margin or absolute positioning */
     /* Example for fine-tuning with margins if centered: */
     /* margin-top: -20px; *//* Move up slightly from center */
