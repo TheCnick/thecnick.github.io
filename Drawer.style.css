@@ -108,7 +108,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: var(--final-responsive-width); /* Now uses the final calculated width */
-    height: var(--final-responsive-height); /* Now uses the final calculated height */
+    height: 941px;
     object-fit: contain;
     z-index: 2;
   
