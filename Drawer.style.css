@@ -68,7 +68,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw; /* Now this should take precedence */
-    height: var(--final-responsive-height);
+    height: 941px;/*var(--final-responsive-height);*/
     z-index: 1000;
     
     transform: translateY(calc(-100% + 275px));
