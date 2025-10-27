@@ -62,7 +62,7 @@ body {
 /* style.css */
 
 /* Target the specific ID for higher specificity */
-#drawer-container { 
+#drawer-container {
     display: grid;
     position: fixed;
     top: 0;
@@ -104,7 +104,7 @@ body {
    unless they are also being overridden. */
 .drawer-content {
     position: absolute; 
-    top: calc(var(275px + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
+    top: calc(275px + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
     left: 50%; 
     transform: translateX(-50%); 
     z-index: 2; 
