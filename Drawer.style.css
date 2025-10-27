@@ -110,9 +110,9 @@ body {
     z-index: 2; 
   
     /* Center its own children if it has any, e.g., the oval img */
-   /*display: flex;*/
+   /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding-top: 20px; /* Move up slightly from center */
     padding-left: 10px; /* Move left slightly from center */
     padding-bottom: 50px;
