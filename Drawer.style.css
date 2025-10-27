@@ -104,11 +104,11 @@ body {
    unless they are also being overridden. */
 .drawer-content {
     position: absolute;
-    top: calc(275px + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
+    top: 0; /* calc(275px + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
     left: 50%;
     transform: translateX(-50%);
     width: var(--final-responsive-width); /* Now uses the final calculated width */
-    height: 941px;
+    height: var(--final-responsive-height); /* Now uses the final calculated height */
     object-fit: contain;
     z-index: 2;
   
