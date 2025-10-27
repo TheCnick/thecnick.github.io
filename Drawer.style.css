@@ -103,11 +103,14 @@ body {
 /* Styles for drawer-content and icon-link can remain as they are, 
    unless they are also being overridden. */
 .drawer-content {
-    position: absolute; 
+    position: absolute;
     top: calc(275px + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
-    left: 50%; 
-    transform: translateX(-50%); 
-    z-index: 2; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--final-responsive-width); /* Now uses the final calculated width */
+    height: var(--final-responsive-height); /* Now uses the final calculated height */
+    object-fit: contain;
+    z-index: 2;
   
     /* Center its own children if it has any, e.g., the oval img */
    /*display: flex;
