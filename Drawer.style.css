@@ -104,7 +104,7 @@ body {
    unless they are also being overridden. */
 .drawer-content {
     position: absolute; 
-    top: calc(var(--drawer-handle-visible-height) + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
+    top: calc(var(275px + (var(--final-responsive-height) * 0.2)); /* Adjust 0.2 */
     left: 50%; 
     transform: translateX(-50%); 
     z-index: 2; 
@@ -128,8 +128,8 @@ body {
     left: 46%; */
     /* With flexbox centering, you might not need top/left. If you need fine-tuning, use margin or absolute positioning */
     /* Example for fine-tuning with margins if centered: */
-    margin-top: -20px; /* Move up slightly from center */
-    margin-left: -10px; /* Move left slightly from center */
+    /* margin-top: -20px; *//* Move up slightly from center */
+   /* margin-left: -10px;*//* Move left slightly from center */
    /* display: block;*/ /* Ensure it behaves as a block element */
     pointer-events: auto; /* Make the image clickable if needed */
 }
