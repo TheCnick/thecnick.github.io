@@ -221,6 +221,18 @@ header {
     padding-left: 2%;
 }
 
+/*Paintings Section*/
+.paintings header {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    height: 2%;
+    background-color: transparent;
+    color: #333;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 2%;
+}
+
 /*Drawer Section*/
 drawer {
     position: absolute; /* Position it relative to the viewport or a parent container */
