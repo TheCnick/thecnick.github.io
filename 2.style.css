@@ -297,7 +297,7 @@ drawer {
 .landing { background: #000000 url('/1000003518-dark.png') no-repeat center center fixed; background-size: cover; }
 .galleries { background: #000000 url('/1000003518-dark.png') no-repeat center center fixed; background-size: cover; }
 .codex { background: #fefdf8 url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #222; }
-.vault { background: #0d0d0d; border: 5px solid #666; padding: 1rem; }
+.paintings { background: #0d0d0d url('/Painted Wall Background.png'); border: 5px solid #666; padding: 1rem; }
 .lab { background: radial-gradient(circle, #0d0d0d, #1a1a1a); color: #9fe8a3; }
 .cabinet { background: #2e2e2e; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; padding: 1rem; }
 .cabinet-item { background: var(--sage); padding: 1rem; border: 2px solid var(--cream); border-radius: 4px; }
