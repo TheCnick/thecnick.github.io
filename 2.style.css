@@ -327,7 +327,8 @@ drawer {
 }
 
 .AboutTheInhabitant main {
-  background: url('Generated Image November 08, 2025 - 11_49PM.png');
+  background: url('Generated Image November 08, 2025 - 11_49PM.png') width: 1080px;
+  margin: 50px;
 }
 
   
