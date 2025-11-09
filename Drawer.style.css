@@ -35,7 +35,7 @@
 
 body {
   margin: 0;
-  background: var(--black) url('Rug.png') height: 1080px;
+  background: var(--black) url('Rug.png');
   color: var(--cream);
   line-height: 1.6;
 }
