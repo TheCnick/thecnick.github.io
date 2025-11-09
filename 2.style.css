@@ -323,6 +323,7 @@ drawer {
 .codex { background: #fefdf8 url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #222; }
 .paintings { background: #0d0d0d url('/Painted Wall Background.png'); border: 0px solid #666; padding: 1rem; }
 .drawings { background: #0d0d0d url('/Painted Wall Background.png'); border: 0px solid #666; padding: 1rem; }
+.AboutTheInhabitant { background: #fefdf8 url('https://www.transparenttextures.com/patterns/paper-fibers.png'); color: #222; }
 .lab { background: radial-gradient(circle, #0d0d0d, #1a1a1a); color: #9fe8a3; }
 .cabinet { background: #2e2e2e; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; padding: 1rem; }
 .cabinet-item { background: var(--sage); padding: 1rem; border: 2px solid var(--cream); border-radius: 4px; }
