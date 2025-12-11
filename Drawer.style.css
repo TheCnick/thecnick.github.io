@@ -95,6 +95,7 @@ body {
     object-fit: contain; /* Ensure the entire image is visible without cropping */
     z-index: 1; /* Behind the content */
     pointer-events: none; /* Allows clicks to pass through to the drawer container */
+    background-repeat: no repeat;
 }
   
     /* filter: drop-shadow(0 4px 3px rgba(0,0,0,0.4)); */
