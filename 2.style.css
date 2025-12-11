@@ -233,7 +233,10 @@ header {
     padding-left: 2%;
 }
 
-
+.paintings-icons {
+  diplay: column;
+  size: 20%
+}
 
 /*Drawings Section*/
 .drawings header {
