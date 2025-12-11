@@ -265,6 +265,12 @@ header {
   z-index: 2; /* Ensures it sits on top if they overlap */
 }
 
+.Image3 {
+  width: 25%;              /* Dogs should probably be slightly narrower than the landscape */
+  max-width: 300px;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+}
+
 
 /*Drawings Section*/
 .drawings header {
