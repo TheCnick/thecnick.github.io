@@ -249,13 +249,13 @@ header {
   border-radius: 8px; /* Optional: rounded corners look nice */
 }
 
-.image1 {
+.Image1 {
   width: 25%;              /* Dogs should probably be slightly narrower than the landscape */
   max-width: 300px;
   box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
 }
 
-.image2 {
+.Image2 {
   width: 40%;              /* Adjust this based on how big you want the flower */
   max-width: 500px;
   box-shadow: 5px 10px 20px rgba(0,0,0,0.3); /* Adds depth/shadow */
