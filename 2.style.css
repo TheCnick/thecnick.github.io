@@ -71,7 +71,8 @@ header {
     color: #70746f;
     font-size: 24px;
     cursor: pointer;
-    padding: 9px;
+    padding: 5px;
+    margin-right: 10px;
 }
 
 .sidebar-overlay {
