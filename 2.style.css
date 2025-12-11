@@ -234,7 +234,7 @@ header {
 }
 
 .paintings-icons {
- display: flex;
+  display: flex;
   justify-content: center; /* Centers the whole group horizontally */
   align-items: center;     /* Aligns them by their vertical center line */
   gap: 20px;               /* Space between the paintings */
@@ -244,7 +244,9 @@ header {
 
 .paintings-icons img {
   digplay: block;
-  margin-bottom: 15px; /* Space below each image */
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px; /* Space below each image */
   break-inside: avoid; /* Prevents images from being cut between columns */
   border-radius: 8px; /* Optional: rounded corners look nice */
 }
