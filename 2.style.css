@@ -250,7 +250,7 @@ header {
 }
 
 .Image1 {
-  width: 25%;              /* Dogs should probably be slightly narrower than the landscape */
+  width: ;              /* Dogs should probably be slightly narrower than the landscape */
   max-width: 300px;
   box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
 }
@@ -266,7 +266,7 @@ header {
 }
 
 .Image3 {
-  width: 25%;              /* Dogs should probably be slightly narrower than the landscape */
+  width: ;              /* Dogs should probably be slightly narrower than the landscape */
   max-width: 300px;
   box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
 }
