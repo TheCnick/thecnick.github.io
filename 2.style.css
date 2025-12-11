@@ -102,7 +102,7 @@ header {
 .sidebar { 
   padding: 0.5rem;
   padding-top: 60px;
-  width: 150px;
+  width: 300px;
   background: #7777 100%;
   overflow: auto;
   position: fixed;
