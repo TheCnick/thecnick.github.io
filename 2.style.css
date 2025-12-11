@@ -65,6 +65,16 @@ header {
     padding: 5px;
 }
 
+.menu-icon-style2 {
+    background: none;
+    border: none;
+    color: #70746f;
+    font-family: Asul;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
 .sidebar-overlay {
     position: fixed;
     top: 0;
