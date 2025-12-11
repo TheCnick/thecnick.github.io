@@ -233,7 +233,11 @@ header {
     padding-left: 2%;
 }
 
-/*Paintings Section*/
+.img {
+  image-size: 20%;
+  margin: 20px;
+
+/*Drawings Section*/
 .drawings header {
     font-family: 'Cinzel', serif;
     font-size: 40px;
