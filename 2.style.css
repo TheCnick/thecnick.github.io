@@ -284,6 +284,32 @@ header {
     padding-left: 2%;
 }
 
+.drawings-icons { 
+  display: flex;
+  justify-content: center; /* Centers the whole group horizontally */
+  align-items: center;     /* Aligns them by their vertical center line */
+  gap: 20px;               /* Space between the paintings */
+  padding: 60px 20px;      /* Extra vertical space so the top/bottom doesn't get cut off */
+}
+
+.drawings-icons img {
+  digplay: block;
+  margin-bottom: 15px; /* Space below each image */
+  break-inside: avoid; /* Prevents images from being cut between columns */
+  border-radius: 8px; /* Optional: rounded corners look nice */
+}
+
+.Drawing1 {
+  width: 40%;              /* Adjust this based on how big you want the flower */
+  max-width: 500px;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.3); /* Adds depth/shadow */
+  
+  /* THIS MOVES THE FLOWER UP */
+  transform: translateY(-50px); 
+  z-index: 2; /* Ensures it sits on top if they overlap */
+}
+
+
 /*Drawer Section*/
 drawer {
     position: absolute; /* Position it relative to the viewport or a parent container */
