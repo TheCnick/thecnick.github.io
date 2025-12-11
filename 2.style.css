@@ -261,7 +261,7 @@ header {
   box-shadow: 5px 10px 20px rgba(0,0,0,0.3); /* Adds depth/shadow */
   
   /* THIS MOVES THE FLOWER UP */
-  transform: translateY(-40px); 
+  transform: translateY(-50px); 
   z-index: 2; /* Ensures it sits on top if they overlap */
 }
 
