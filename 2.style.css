@@ -249,6 +249,12 @@ header {
   border-radius: 8px; /* Optional: rounded corners look nice */
 }
 
+.image1 {
+  width: 25%;              /* Dogs should probably be slightly narrower than the landscape */
+  max-width: 300px;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
+}
+
 
 /*Drawings Section*/
 .drawings header {
