@@ -235,8 +235,12 @@ header {
 
 .paintings-icons {
   diplay: column;
-  margin: 40%;
+  margin: 80px;
   size: 20%;
+}
+
+.paintings-icons img {
+  margin: 50px;
 }
 
 /*Drawings Section*/
