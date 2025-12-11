@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel:wght@400;700&display=swap&family=Asul:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel:wght@400;700&display=swap&family=Asul:wght@400;700&display=swap&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 :root {
   --sage: #3a4a3f;
@@ -70,6 +70,7 @@ header {
     border: none;
     color: #70746f;
     font-size: 24px;
+    font-family: Qwitcher Grypen;
     cursor: pointer;
     padding: 5px;
     margin-right: 10px;
