@@ -1,6 +1,6 @@
 // This is the entire content for your script.js file
 document.addEventListener('DOMContentLoaded', () => {
-    const drawerContainer = document.getElementById('drawer-background-image');
+    const drawerContainer = document.getElementById('drawer-container');
     const header = document.querySelector('drawer-background-image');
 
     if (header && drawerContainer) {
