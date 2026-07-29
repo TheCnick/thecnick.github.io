@@ -147,8 +147,8 @@ header {
 }
 
 .sidebar a:hover {
-  text-shadow: 0 0 5px var(--sage);
-  color: #b2d98b;
+  text-shadow: 0 0 5px #b1d989;
+  color: #b1d989;
 }
 
 .content {
