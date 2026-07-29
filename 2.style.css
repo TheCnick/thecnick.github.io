@@ -147,7 +147,7 @@ header {
 }
 
 .sidebar a:hover {
-  text-shadow: 0 0 5px #b1d989;
+  text-shadow: 0 0 5px #c9dbb6;
   color: #b1d989;
 }
 
@@ -290,11 +290,10 @@ header {
 /*Drawings Section*/
 .drawings header {
     font-family: 'Asul', serif;
-    font-color: #898E88;
+    color: #B2BEAC;
     font-size: 40px;
     height: 2%;
     background-color: transparent;
-    color: #898E88;
     text-align: left;
     padding-top: 5px;
     padding-left: 2%;
