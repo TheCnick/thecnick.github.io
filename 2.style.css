@@ -168,7 +168,7 @@ header {
   font-family: 'Asul', serif;
   color: var(--cream);
   text-align: center; /* Centers the text horizontally */
-  font-size: 2em; /* Sets font size to 2em */
+  font-size: 1em; /* Sets font size to 2em */
 }
 
 .ovals {
