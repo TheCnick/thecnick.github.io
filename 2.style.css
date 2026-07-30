@@ -165,6 +165,7 @@ header {
 }
 
  #footer {
+  position: fixed;
   font-family: 'Asul', serif;
   color: var(--cream);
   text-align: center; /* Centers the text horizontally */
