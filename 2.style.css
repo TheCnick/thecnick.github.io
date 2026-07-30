@@ -162,7 +162,6 @@ header {
 
 .content {
     flex-grow: 1; /* Allows main content to take remaining vertical space */
-    padding: 20px;
 }
 
  footer {
