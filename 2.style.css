@@ -22,7 +22,7 @@ body {
 }
 
 main {  
-  flex: 1; /* Shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */  
+  flex-grow: 1; /* Shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */  
 }  
 
 header {
@@ -166,7 +166,7 @@ header {
 }
 
 .content {
-    /* Allows main content to take remaining vertical space */
+    flex-grow: 1;/* Allows main content to take remaining vertical space */
     padding: 20px;
 }
 
