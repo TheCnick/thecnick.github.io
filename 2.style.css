@@ -20,6 +20,10 @@ body {
   padding-bottom: 30px;
 }
 
+main {  
+  flex: 1; /* Shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0 */  
+}  
+
 header {
   background: var(--sage);
   padding: 1rem;
@@ -161,7 +165,8 @@ header {
 }
 
 .content {
-    flex-grow: 1; /* Allows main content to take remaining vertical space */
+    /* Allows main content to take remaining vertical space */
+    padding: 20px;
 }
 
  footer {
