@@ -242,7 +242,7 @@ header {
   top: 24%;
   left: 43%;
   width: 57%;
-  transform: translateY(20%);
+  transform: translateY(15%);
   align-items: right;
   z-index: 2;
 }
