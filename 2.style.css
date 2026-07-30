@@ -430,7 +430,8 @@ drawer {
     font-size: 40px;
     height: 2%;
     margin: 90px;
-   background: url('/Painted Wall Background.png');
+    background: url('/Painted Wall Background.png') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .AboutTheInhabitant header {
