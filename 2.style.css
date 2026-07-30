@@ -164,6 +164,13 @@ header {
     padding: 20px;
 }
 
+.footer {
+  font-family: 'Asul', serif;
+  color: var(--cream);
+  text-align: center; /* Centers the text horizontally */
+  font-size: 2em; /* Sets font size to 2em */
+}
+
 .ovals {
   position: relative;
   width: 100%;
