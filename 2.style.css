@@ -164,7 +164,7 @@ header {
     padding: 20px;
 }
 
- #footer {
+ footer {
   position:absolute;
   font-family: 'Asul', serif;
   color: var(--cream);
