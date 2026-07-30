@@ -173,7 +173,7 @@ header {
   padding-bottom: 0%; /* Create a taller oval aspect ratio for your plaques */
   border-radius: 60%/70%; /* This can make a more distinct oval shape if needed */
   background-color: transparent; /* Assuming your images will fill the space */
-  overflow: hidden; /* Keep image inside */
+   /* Keep image inside */
   display: flex;
   justify-content: center;
   align-items: center;
