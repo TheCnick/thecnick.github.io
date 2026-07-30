@@ -246,6 +246,11 @@ header {
     padding-left: 2%;
 }
 
+.paintings header a {
+   color: #B2BEAC;
+   text-decoration: none;
+}
+  
 .paintings-icons {
   display: flex;
   justify-content: center; /* Centers the whole group horizontally */
