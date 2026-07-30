@@ -309,6 +309,11 @@ header {
     padding-left: 2%;
 }
 
+.drawings header a {
+   color: #B2BEAC;
+   text-decoration: none;
+}
+
 .drawings-icons { 
   display: flex;
   justify-content: center; /* Centers the whole group horizontally */
