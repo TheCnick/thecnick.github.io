@@ -160,7 +160,7 @@ header {
   position: relative;
   width: 100%;
   height: 600px;
-  overflow: hidden;/* Still good practice for positioned elements */
+  /* Still good practice for positioned elements */
   display: flex; /* Using flexbox to arrange them initially */
   justify-content: center; /* Center horizontally */
   align-items: flex-start; /* Align to the top of the container */
@@ -173,7 +173,7 @@ header {
   padding-bottom: 0%; /* Create a taller oval aspect ratio for your plaques */
   border-radius: 60%/70%; /* This can make a more distinct oval shape if needed */
   background-color: transparent; /* Assuming your images will fill the space */
-   /* Keep image inside */
+  overflow: hidden; /* Keep image inside */
   display: flex;
   justify-content: center;
   align-items: center;
