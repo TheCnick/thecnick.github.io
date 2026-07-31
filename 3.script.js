@@ -19,4 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
             drawerContainer.classList.remove('is-open');
         }
     });
+
+    document.addEventListener('click', function(e) => {
+         if (e.key === ' ') {
+    startAnimation();
+  }
+});
+    
 });
