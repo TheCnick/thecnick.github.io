@@ -280,7 +280,7 @@ header {
   justify-content: center; /* Centers the whole group horizontally */
   align-items: center;     /* Aligns them by their vertical center line */
   gap: 20px;               /* Space between the paintings */
-  padding: 60px 20px;      /* Extra vertical space so the top/bottom doesn't get cut off */
+  padding: 120px 20px 0px 20px;      /* Extra vertical space so the top/bottom doesn't get cut off */
 }
 
 
@@ -343,7 +343,7 @@ header {
   justify-content: center; /* Centers the whole group horizontally */
   align-items: center;     /* Aligns them by their vertical center line */
   gap: 20px;               /* Space between the paintings */
-  padding: 60px 20px;      /* Extra vertical space so the top/bottom doesn't get cut off */
+  padding: 120px 20px 0px 20px;      /* Extra vertical space so the top/bottom doesn't get cut off */
 }
 
 .drawings-icons img {
