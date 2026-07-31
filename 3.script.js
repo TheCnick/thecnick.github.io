@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const drawerContainer = document.getElementById('drawer-container');
     const drawerContent = document.querySelector('.drawer-content');
 
-    if (drawerContent & drawerContainer) {
+    if (drawerContent && drawerContainer) {
         drawerContent.addEventListener('click', () => {
             // This is the ONLY place you should be modifying the drawer's open/close state.
             // DO NOT directly set element.style.transform here.
