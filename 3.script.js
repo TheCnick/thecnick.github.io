@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', function(e) {
          if (e.key === ' ') {
-    startAnimation();
+           drawerContainer.classList.toggle('is-open')
   }
 });
     
