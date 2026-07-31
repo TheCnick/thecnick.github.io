@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional: Close drawer when clicking outside
     document.addEventListener('click', (event) => {
         if (drawerContainer.classList.contains('is-open') && 
-            !drawerContainer.contains(event.target) && 
             !drawerContainer.contains(event.target)) {
             drawerContainer.classList.remove('is-open');
         }
