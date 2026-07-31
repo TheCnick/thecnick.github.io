@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('keydown', function(e) {
-         if (e.key === ' ') {
+         if (e.key === 'Enter') {
            drawerContainer.classList.toggle('is-open')
   }
 });
