@@ -1,7 +1,7 @@
 // This is the entire content for your script.js file
 document.addEventListener('DOMContentLoaded', () => {
     const drawerContainer = document.getElementById('drawer-container');
-    const drawerBackgroundImage = document.querySelector('.drawer-background-image');
+    const drawerBackgroundImage = document.querySelector('drawer-background-image');
 
     if (drawerBackgroundImage && drawerContainer) {
         drawerBackgroundImage.addEventListener('click', () => {
