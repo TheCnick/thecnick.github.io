@@ -240,9 +240,9 @@ header {
 .shelf img {
   position: relative;
   top: 24%;
-  left: 43%;
+  left: 40%;
   width: 57%;
-  transform: translateY(186%);
+  transform: translateY(125%);
   align-items: right;
   z-index: 2;
 }
