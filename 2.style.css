@@ -367,7 +367,6 @@ header {
   align-items: flex-end;
   overflow: hidden;
   border-radius: 8px;        /* Optional rounded corners */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   cursor: pointer;
 }
 
@@ -384,7 +383,7 @@ header {
   transition: transform 0.3s ease;
 } 
 
-.FullPage:hover img {
+.SkullImage:hover {
   transform: scale (1.2);
 }
 
