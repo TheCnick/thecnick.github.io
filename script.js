@@ -28,6 +28,5 @@ container.addEventListener('mousemove', (e) => {
   const moveY = y * -40;
 
   image.style.transform = `translate(${moveX}px, ${moveY}px)`;
-});
-});
+ });
 });
