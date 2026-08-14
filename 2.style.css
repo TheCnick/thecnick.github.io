@@ -341,6 +341,18 @@ header {
   box-shadow: 5px 10px 20px rgba(0,0,0,0.3);
 }
 
+.RememberYourArt header {
+    font-family: 'Asul', serif;
+    color: #B2BEAC;
+    font-size: 40px;
+    height: 2%;
+    background-color: transparent;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 2%;
+}
+
+.SkullImage 
 
 
 /*Drawings Section*/
