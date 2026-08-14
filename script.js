@@ -32,7 +32,7 @@ container.addEventListener('mousemove', (e) => {
   image.style.transformOrigin = `${x}% ${y}%`;
   image.style.transform = `
     translate(${moveX}px, ${moveY}px)
-    scale(1.2)
+    scale(1.9)
   `;
 });
 
