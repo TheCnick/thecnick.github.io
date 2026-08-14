@@ -35,5 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
     container.addEventListener('wheel', (e) => {
       e.preventDefault();
       container.scrollTop += e.deltaY;
+     disableScrollLock?: boolean;
     });
 });
