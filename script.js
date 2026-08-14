@@ -20,12 +20,14 @@ const image = document.querySelector('.SkullImage');
 container.addEventListener('mousemove', (e) => {
   // Calculate relative cursor position (0-100)
   const rect = container.getBoundingClientRect();
-  const x = (e.clientX - rect.left) / rect.width * 100;
-  const y = (e.clientY - rect.top) / rect.height * 100;
+    
+  const x = (e.clientX - rect.left) / rect.width - 0.5;
+  const y = (e.clientY - rect.top) / rect.height - 0.5;
 
-  // Move the image in the opposite direction
-  image.style.left = -x + '%';
-  image.style.top = -y + '%';
+  const moveX = x * -40;
+  const moveY = y * -40;
+
+  image.style.transform = `translate(${moveX}px, ${moveY}px)`;
 });
 });
 });
