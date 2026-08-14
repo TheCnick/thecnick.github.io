@@ -31,8 +31,8 @@ container.addEventListener('mousemove', (e) => {
   // Zoom toward cursor
   image.style.transformOrigin = `${x}% ${y}%`;
   image.style.transform = `
+    scale(1.9) 
     translate(${moveX}px, ${moveY}px)
-    scale(1.9)
   `;
 });
 
