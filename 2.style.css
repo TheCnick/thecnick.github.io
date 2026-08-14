@@ -358,19 +358,25 @@ header {
 }
 
 .FullPage {
-  width: ;
-  height: ;
+  display: block;
+  wdth: ;
+  heighth:;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px; /* Space below each image */
+  break-inside: avoid; /* Prevents images from being cut between columns */
+  border-radius: 8px; /* Optional: rounded corners look nice */
   overflow: hidden;
 }
 
-FullPage img {
+.FullPage img {
   width: 70%:
   height: 70%;
   object-fit: cover;
   transition: transform 0.3s ease;
 } 
 
-FullPage:hover img {
+.FullPage:hover img {
   transform: scale (1.1);
 }
 
