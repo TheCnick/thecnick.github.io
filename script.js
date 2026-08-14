@@ -18,15 +18,19 @@ const container = document.querySelector('.FullPage');
 const image = document.querySelector('.SkullImage');
 
 container.addEventListener('mousemove', (e) => {
-  // Calculate relative cursor position (0-100)
   const rect = container.getBoundingClientRect();
-    
-  const x = (e.clientX - rect.left) / rect.width - 0.5;
-  const y = (e.clientY - rect.top) / rect.height - 0.5;
 
-  const moveX = x * -40;
-  const moveY = y * -40;
+  const x = (e.clientX - rect.left) / rect.width;
+  const y = (e.clientY - rect.top) / rect.height;
 
-  image.style.transform = `translate(${moveX}px, ${moveY}px)`;
+  const moveX = (x - 0.5) * 40;
+  const moveY = (y - 0.5) * 40;
+
+  image.style.transform =
+    `translate(${moveX}px, ${moveY}px) scale(1.15)`;
+});
+
+container.addEventListener('mouseleave', () => {
+  image.style.transform = 'translate(0, 0) scale(1)';
  });
 });
