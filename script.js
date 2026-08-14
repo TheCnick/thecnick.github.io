@@ -20,17 +20,24 @@ const image = document.querySelector('.SkullImage');
 container.addEventListener('mousemove', (e) => {
   const rect = container.getBoundingClientRect();
 
-  const x = (e.clientX - rect.left) / rect.width;
-  const y = (e.clientY - rect.top) / rect.height;
+  // Cursor position as a percentage of the container
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
 
-  const moveX = (x - 0.5) * 40;
-  const moveY = (y - 0.5) * 40;
+  // Move image slightly with cursor
+  const moveX = (x - 50) * 0.8;
+  const moveY = (y - 50) * 0.8;
 
-  image.style.transform =
-    `translate(${moveX}px, ${moveY}px) scale(1.15)`;
+  // Zoom toward cursor
+  image.style.transformOrigin = `${x}% ${y}%`;
+  image.style.transform = `
+    translate(${moveX}px, ${moveY}px)
+    scale(1.2)
+  `;
 });
 
 container.addEventListener('mouseleave', () => {
+  image.style.transformOrigin = 'center center';
   image.style.transform = 'translate(0, 0) scale(1)';
  });
 });
