@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //     link.addEventListener('click', toggleSidebar);
     // });
 
-    const container = document.querySelector('.FullPage');
+    const container = document.querySelector('.SkullImage');
 
     container.addEventListener('mouseenter', () => {
         container.style.transform = 'scale(1.5)';
