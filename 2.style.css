@@ -358,28 +358,32 @@ header {
 }
 
 .FullPage {
+  display: flex;
+  justify-content: center; /* Centers the whole group horizontally */
+  align-items: center;     /* Aligns them by their vertical center line */
+  gap: 20px;               /* Space between the paintings */
+  padding: 0px 20px 0px 20px;      /* Extra vertical space so the top/bottom doesn't get cut off */
+  justify-content: space-around;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.FullPage img {
   display: block;
-  wdth: ;
-  heighth:;
+  width: 70%;
+  height: 70%;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 20px; /* Space below each image */
   break-inside: avoid; /* Prevents images from being cut between columns */
   border-radius: 8px; /* Optional: rounded corners look nice */
-  overflow: hidden;
-}
-
-.FullPage img {
-  width: 70%:
-  height: 70%;
   object-fit: cover;
   transition: transform 0.3s ease;
 } 
 
 .FullPage:hover img {
-  transform: scale (1.1);
+  transform: scale (1.2);
 }
-
 
 /*Drawings Section*/
 .drawings header {
