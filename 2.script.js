@@ -20,4 +20,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // sidebarLinks.forEach(link => {
     //     link.addEventListener('click', toggleSidebar);
     // });
+
+    const container = document.querySelector('.zoom-container');
+
+    container.addEventListener('mouseenter', () => {
+        container.style.transform = 'scale(1.5)';
+    });
+
+    container.addEventListener('mouseleave', () => {
+      container.style.transform = 'scale(1)';
+    });
+
+    // Optional: smooth scroll inside zoomed area
+    container.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      container.scrollTop += e.deltaY;
+    });
 });
