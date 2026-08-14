@@ -370,7 +370,7 @@ header {
   cursor: pointer;
 }
 
-.FullPage img {
+.SkullImage {
   display: block;
   width: 70%;
   height: 70%;
@@ -384,7 +384,7 @@ header {
 } 
 
 .SkullImage:hover {
-  transform: scale (1.2);
+  transform: scale(1.9);
 }
 
 /*Drawings Section*/
