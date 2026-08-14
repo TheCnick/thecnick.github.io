@@ -5,7 +5,7 @@
   <title>Painting Wall | C.nick</title>
   <link rel="stylesheet" href="2.style.css">
 </head>
-<body class="paintings">
+<body class="SkullPainting">
     <header class="title" style="align: right; color: #B2BEAC;">
       <button id="menu-toggle" class="menu-icon-style2" style="color: #B2BEAC">
             &#9776; <!-- Unicode for hamburger icon -->
@@ -26,14 +26,8 @@
    </ul>
   </nav>
   <main>
-    <div class="paintings-icons">
-      <img src="tumblr_o7h5fwYVCq1vv8ra1o1_540.jpg" class="Image1" alt="Painted Portrait of a Corgi" height="350">
-      <img src="tumblr_o7i49gHiyF1vv8ra1o1_1280.png" class="Image2" alt="Still Life Painting of a Magnolia" width="500">
-      <img src="tumblr_o7i4e2dmxv1vv8ra1o1_640.jpg" class="Image3" alt="Portrait Painting of a Border Collie" height="">
-    </div>
-    <br>
      <div class="paintings-icons2">
-      <img src="SkullPainting-RememberYourArt.png" class="Image4" alt="Still Life with Skull, Box of Soft Pastels, and Remote" height="400">
+      <img src="SkullPainting-RememberYourArt.png" class="Image4" alt="Still Life with Skull, Box of Soft Pastels, and Remote" height="800">
     </div>
   </main>
   <footer>All images and text © C.nick unless otherwise stated.</footer>
