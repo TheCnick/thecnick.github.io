@@ -366,6 +366,9 @@ header {
   justify-content: space-around;
   align-items: flex-end;
   overflow: hidden;
+  border-radius: 8px;        /* Optional rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
 }
 
 .FullPage img {
