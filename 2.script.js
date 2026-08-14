@@ -21,20 +21,31 @@ document.addEventListener('DOMContentLoaded', function() {
     //     link.addEventListener('click', toggleSidebar);
     // });
 
-    const container = document.querySelector('.SkullImage');
+        
+  const container = document.querySelector('.FullPage');
+  const image = document.querySelector('.SkullImage');
 
-    container.addEventListener('mouseenter', () => {
-        container.style.transform = 'scale(1.5)';
-    });
+container.addEventListener('mousemove', (e) => {
+  const rect = container.getBoundingClientRect();
 
-    container.addEventListener('mouseleave', () => {
-      container.style.transform = 'scale(1)';
-    });
+  // Cursor position as a percentage of the container
+  const x = ((e.clientX - rect.left) / rect.width) * 100;
+  const y = ((e.clientY - rect.top) / rect.height) * 100;
 
-    // Optional: smooth scroll inside zoomed area
-    container.addEventListener('wheel', (e) => {
-      e.preventDefault();
-      container.scrollTop += e.deltaY;
-     disableScrollLock?: boolean;
-    });
+  // Move image slightly with cursor
+  const moveX = (x - 50) * 0.8;
+  const moveY = (y - 50) * 0.8;
+
+  // Zoom toward cursor
+  image.style.transformOrigin = `${x}% ${y}%`;
+  image.style.transform = `
+    scale(1.9) 
+    translate(${moveX}px, ${moveY}px)
+  `;
+});
+
+container.addEventListener('mouseleave', () => {
+  image.style.transformOrigin = 'center center';
+  image.style.transform = 'translate(0, 0) scale(1)';
+ });
 });
