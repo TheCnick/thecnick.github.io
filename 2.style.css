@@ -380,9 +380,9 @@ header {
   break-inside: avoid; /* Prevents images from being cut between columns */
   border-radius: 8px; /* Optional: rounded corners look nice */
   object-fit: cover;
-  transition:
-    transform 0.25s ease-out,
-    transform-origin 0s;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              transform-origin 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform, transform-origin;
 } 
 
 .SkullImage:hover {
