@@ -358,7 +358,8 @@ header {
 }
 
 .FullPage {
-  display: flex;
+  display: flex; 
+  position: relative;
   justify-content: center; /* Centers the whole group horizontally */
   align-items: center;     /* Aligns them by their vertical center line */
   gap: 20px;               /* Space between the paintings */
@@ -368,7 +369,21 @@ header {
   overflow: hidden;
   border-radius: 8px;        /* Optional rounded corners */
   cursor: crosshair;
+  cursor: zoom-in;
+  outline: none;
 }
+
+/* Change cursor when zoomed */
+.FullPage.is-zoomed {
+  cursor: zoom-out;
+}
+
+/* Clear keyboard focus indicator */
+.FullPage:focus-visible {
+  outline: 3px solid #3b82f6;
+  outline-offset: 3px;
+}
+
 
 .SkullImage {
   display: block;
