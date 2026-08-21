@@ -368,7 +368,6 @@ header {
   align-items: flex-end;
   overflow: hidden;
   border-radius: 8px;        /* Optional rounded corners */
-  cursor: crosshair;
   cursor: zoom-in;
   outline: none;
 }
