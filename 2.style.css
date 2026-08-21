@@ -399,9 +399,9 @@ header {
   will-change: transform, transform-origin;
 } 
 
-.SkullImage:hover {
+/*.SkullImage:hover {
   transform: scale(1.9);
-}
+}*/
 
 /*Drawings Section*/
 .drawings header {
