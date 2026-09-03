@@ -320,7 +320,7 @@ header {
 }
 
 .Image2 {
-  width: 40%;              /* Adjust this based on how big you want the flower */
+  width: 100%;              /* Adjust this based on how big you want the flower */
   max-width: 500px;
   box-shadow: 5px 10px 20px rgba(0,0,0,0.3); /* Adds depth/shadow */
   
