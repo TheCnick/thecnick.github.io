@@ -561,15 +561,17 @@ drawer {
 }
 
 #fragment1 {
+  display: inline-block;
   background-image: url('Old Paper- Cut Pieces-Fragment1.png');
- background-size: 28%, cover;    /* Scale image to cover the element */
+  background-size: 100%, cover;    /* Scale image to cover the element */
   background-position: left; /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
-  padding-bottom: 10%;
-  padding-top: 12%; 
-  padding-left: 2%;
+  padding-bottom: 12%;
+  padding-top: 15%; 
+  padding-left: 2.5%;
+  padding-right: 17%;
   text-align: start;
-  text-anchor: start;
+  text-anchor: start;  
 }
   
   
