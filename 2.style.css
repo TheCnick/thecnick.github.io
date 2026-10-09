@@ -578,6 +578,12 @@ drawer {
   text-anchor: start;
   color: #31221c;
 }
+
+#fragment6 {
+  display: inline-block; /* ensures transform works on text */
+  transform: rotate(30deg); /* clockwise rotation */
+  padding: 20%;
+}
   
   
 /* Section-specific vibes */
