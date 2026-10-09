@@ -558,8 +558,10 @@ drawer {
 .AboutTheInhabitant main {
   /* background: url('Generated Image November 08, 2025 - 11_49PM.png'); */
   font-family: Freehand;
-  font-size: 5em;
-  margin: 90px;
+  font-size: 2em;
+  font-weight: 500;
+  margin-right: 90px;
+  margin-left: 90px;
 }
 
 #fragment1 {
@@ -568,8 +570,8 @@ drawer {
   background-size: 100%, cover;    /* Scale image to cover the element */
   background-position: left; /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
-  padding-bottom: 12%;
-  padding-top: 15%; 
+  padding-bottom: 9%;
+  padding-top: 11%; 
   padding-left: 2.5%;
   padding-right: 17%;
   text-align: start;
@@ -586,7 +588,7 @@ drawer {
 .RememberYourArt { background: #0d0d0d url('/Painted Wall Background.png'); border: 0px solid #666; padding: 1rem; }
 .drawings { background: #0d0d0d url('/Painted Wall Background.png'); border: 0px solid #666; padding: 1rem; }
 .ComingSoon {background: url('/Painted Wall Background.png') no-repeat center center fixed; background-size: cover; }
-.AboutTheInhabitant { background: #fefdf8 url('AboutPage-WoodWalnut-BackgroudImage.png'); color: #222; }
+.AboutTheInhabitant { background: #fefdf8 url('AboutPage-WoodWalnut-BackgroudImage.png') no-repeat center center fixed; color: #222; }
 .lab { background: radial-gradient(circle, #0d0d0d, #1a1a1a); color: #9fe8a3; }
 .cabinet { background: #2e2e2e; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; padding: 1rem; }
 .cabinet-item { background: var(--sage); padding: 1rem; border: 2px solid var(--cream); border-radius: 4px; }
