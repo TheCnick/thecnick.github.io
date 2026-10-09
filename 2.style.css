@@ -562,10 +562,14 @@ drawer {
 
 #fragment1 {
   background-image: url('Old Paper- Cut Pieces-Fragment1.png');
-  background-size: 65%, cover;    /* Scale image to cover the element */
-  background-position: center; /* Center the image */
+ background-size: 28%, cover;    /* Scale image to cover the element */
+  background-position: left; /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
-  padding-bottom: 24%;
+  padding-bottom: 10%;
+  padding-top: 12%; 
+  padding-left: 2%;
+  text-align: start;
+  text-anchor: start;
 }
   
   
