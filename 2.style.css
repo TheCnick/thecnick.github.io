@@ -580,8 +580,8 @@ drawer {
 }
 
   #fragment2 {
-    font-size: 83%;
-    display: inherit;
+    font-size: clamp(0.75rem, 2.2vw, 1.25rem);
+    aspect-ratio: 988 / 762;
     background-image: url(Old Paper- Cut Pieces-Fragment2.png);
     background-size: contain;
     background-position: center;
@@ -590,13 +590,14 @@ drawer {
     padding-top: 5%;
     padding-left: 10.5%;
     padding-right: 8%;
-    margin: 10%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    text-anchor: initial;
+    box-sizing: border-box;
+    margin: 0 10%; 
+    width: auto;
     color: #31221c;
+    display: flex; /* Changed from 'inherit' to activate flex properties below */
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center; /* Or 'flex-start' if you want it aligned to the top */
+    justify-content: center;
   }
 
 
