@@ -577,7 +577,22 @@ drawer {
   text-align: start;
   text-anchor: start;
   color: #31221c;
-}
+
+  #fragmant2 {
+  display: inline-block;
+  background-image: url('Old Paper- Cut Pieces-Fragment2.png');
+  background-size: 100%, cover;    /* Scale image to cover the element */
+  background-position: left; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  padding-bottom: 9%;
+  padding-top: 11%; 
+  padding-left: 2.5%;
+  padding-right: 17%;
+  text-align: start;
+  text-anchor: start;
+  color: #31221c;
+  }
+
 
 #fragment6 {
     display: flex;
