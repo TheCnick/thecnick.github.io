@@ -580,18 +580,23 @@ drawer {
 }
 
   #fragment2 {
-  display: inline-block;
-  background-image: url('Old Paper- Cut Pieces-Fragment2.png');
-  background-size: 100%, cover;    /* Scale image to cover the element */
-  background-position: left; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  padding-bottom: 9%;
-  padding-top: 11%; 
-  padding-left: 2.5%;
-  padding-right: 17%;
-  text-align: start;
-  text-anchor: start;
-  color: #31221c;
+    font-size: 83%;
+    display: inherit;
+    background-image: url(Old Paper- Cut Pieces-Fragment2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    padding-left: 10.5%;
+    padding-right: 8%;
+    margin: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-anchor: initial;
+    color: #31221c;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 
 
