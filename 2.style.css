@@ -586,7 +586,7 @@ drawer {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: clamp(10px, 6vw, 50px);
+    padding-top: clamp(10px, 8vw, 60px);
     padding-bottom: clamp(10px, 10vw, 72px);
     padding-left: clamp(15px, 9vw, 90px);
     padding-right: clamp(15px, 9vw, 80px);
