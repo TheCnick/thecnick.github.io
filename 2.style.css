@@ -604,7 +604,7 @@ drawer {
     font-size: clamp(0.7rem, 3.2vw, 2rem);
     aspect-ratio: 973 / 508;
     background-image: url('Old Paper- Cut Pieces-Fragment3.png');
-    background-size: 100% 80%;
+    background-size: 100% 75%;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: clamp(10px, 9vw, 55px);
