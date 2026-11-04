@@ -602,17 +602,17 @@ drawer {
 
  #fragment3 {
     font-size: clamp(0.7rem, 3.2vw, 2rem);
-    aspect-ratio: 980 / 760;
+    aspect-ratio: 973 / 508;
     background-image: url('Old Paper- Cut Pieces-Fragment3.png');
-    background-size: 100% 100%;
+    background-size: 100% 80%;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: clamp(10px, 9vw, 55px);
-    padding-bottom: clamp(10px, 13vw, 76px);
+    padding-bottom: clamp(10px, 13vw, 94px);
     padding-left: clamp(15px, 9vw, 90px);
     padding-right: clamp(15px, 9vw, 80px);
     box-sizing: border-box;
-    margin: 0 10%; 
+    margin: 0 10%;
     width: auto;
     color: #31221c;
     display: flex; /* Changed from 'inherit' to activate flex properties below */
