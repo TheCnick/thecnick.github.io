@@ -621,6 +621,27 @@ drawer {
     justify-content: center;
  }
 
+ #fragment4 {
+    font-size: clamp(0.7rem, 3.2vw, 2rem);
+    aspect-ratio: 973 / 508;
+    background-image: url('Old Paper- Cut Pieces-Fragment4.png');
+    background-size: 100% 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: clamp(10px, 9vw, 55px);
+    padding-bottom: clamp(10px, 13vw, 94px);
+    padding-left: clamp(15px, 9vw, 90px);
+    padding-right: clamp(15px, 9vw, 80px);
+    box-sizing: border-box;
+    margin: 0 10%;
+    width: auto;
+    color: #31221c;
+    display: flex; /* Changed from 'inherit' to activate flex properties below */
+    flex-wrap: wrap;
+    align-items: center; /* Or 'flex-start' if you want it aligned to the top */
+    justify-content: center;
+ }
+
 #fragment6 {
     display: flex;
     transform: rotate(-30deg);
