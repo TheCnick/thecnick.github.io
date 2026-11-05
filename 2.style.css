@@ -623,13 +623,13 @@ drawer {
 
  #fragment4 {
     font-size: clamp(0.7rem, 3.2vw, 2rem);
-    aspect-ratio: 973 / 508;
+    aspect-ratio: 965 / 905;
     background-image: url('Old Paper- Cut Pieces-Fragment4.png');
-    background-size: 100% 75%;
+    background-size: 100% 84%;
     background-position: center;
     background-repeat: no-repeat;
     padding-top: clamp(10px, 9vw, 55px);
-    padding-bottom: clamp(10px, 13vw, 94px);
+    padding-bottom: clamp(10px, 13vw, 129px);
     padding-left: clamp(15px, 9vw, 90px);
     padding-right: clamp(15px, 9vw, 80px);
     box-sizing: border-box;
