@@ -664,29 +664,20 @@ drawer {
  }
 
 #fragment6 {
-    display: flex;
     transform: rotate(-30deg);
-    padding-bottom: 1%;
-    padding-left: 0%;
-    margin-top: -3%;
-    margin-left: 25%;
     margin-right: -12%;
     align-content: flex-end;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: space-evenly;
-    font-size: 92%;
-    font-size: clamp(0.7rem, 3.2vw, 2.5rem);
+    font-size: clamp(0.7rem, 2.4vw, 2rem);
     aspect-ratio: 720 / 231;
     background-image: url('Old Paper- Cut Pieces-Fragment6.2.png');
-    background-size: 96% 68%;
+    background-size: 100% 60%;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: clamp(10px, 15vw, 74px);
-    padding-bottom: clamp(10px, 23vw, 113px);
-    padding-left: clamp(15px, 9vw, 111px);
-    padding-right: clamp(15px, 9vw, 91px);
+    padding-top: clamp(10px, 15vw, -3px);
+    padding-bottom: clamp(10px, 23vw, 85px);
+    padding-left: clamp(15px, 9vw, 58px);
+    padding-right: clamp(4px, 9vw, 60px);
     box-sizing: border-box;
     margin: 0 10%;
     width: auto;
