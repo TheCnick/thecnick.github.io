@@ -691,13 +691,13 @@ drawer {
     font-size: clamp(0.7rem, 3.2vw, 2.5rem);
     aspect-ratio: 972 / 610;
     background-image: url('Old Paper- Cut Pieces-Fragment7.png');
-    background-size: 100% 90%;
+    background-size: 100% 88%;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: clamp(10px, 15vw, 74px);
-    padding-bottom: clamp(10px, 23vw, 113px);
-    padding-left: clamp(15px, 9vw, 111px);
-    padding-right: clamp(15px, 9vw, 91px);
+    padding-top: clamp(10px, 15vw, 25px);
+    padding-bottom: clamp(10px, 23vw, 40px);
+    padding-left: clamp(15px, 9vw, 130px);
+    padding-right: clamp(15px, 9vw, 53px);
     box-sizing: border-box;
     margin: 0 10%;
     width: auto;
