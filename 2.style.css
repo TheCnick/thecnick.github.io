@@ -676,7 +676,7 @@ drawer {
     padding-top: clamp(10px, 15vw, 5px);
     padding-bottom: clamp(10px, 23vw, 114px);
     padding-left: clamp(15px, 9vw, 35px);
-    padding-right: clamp(4px, 9vw, 85px);
+    padding-right: clamp(4px, 9vw, 75px);
     box-sizing: border-box;
     margin: 0 10%;
     width: auto;
