@@ -686,7 +686,27 @@ drawer {
     align-items: center; /* Or 'flex-start' if you want it aligned to the top */
     justify-content: center;
 }
-  
+
+  #fragment7 {
+    font-size: clamp(0.7rem, 3.2vw, 2.5rem);
+    aspect-ratio: 961 / 687;
+    background-image: url('Old Paper- Cut Pieces-Fragment7.png');
+    background-size: 96% 68%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: clamp(10px, 15vw, 74px);
+    padding-bottom: clamp(10px, 23vw, 113px);
+    padding-left: clamp(15px, 9vw, 111px);
+    padding-right: clamp(15px, 9vw, 91px);
+    box-sizing: border-box;
+    margin: 0 10%;
+    width: auto;
+    color: #31221c;
+    display: flex; /* Changed from 'inherit' to activate flex properties below */
+    flex-wrap: wrap;
+    align-items: center; /* Or 'flex-start' if you want it aligned to the top */
+    justify-content: center;
+ }
   
 /* Section-specific vibes */
 .landing { background: #000000 url('/1000003518-dark.png') no-repeat center center fixed; background-size: cover; }
